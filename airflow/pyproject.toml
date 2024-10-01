@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "airflow"
+version = "0.1.0"
+description = ""
+authors = ["Patrick <chiu.men@northeastern.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+azure-ai-formrecognizer = "^3.3.3"
+azure-storage-blob = "^12.23.1"
+boto3 = "^1.35.29"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

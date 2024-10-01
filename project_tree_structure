@@ -1,0 +1,28 @@
+project_name/
+│
+├── airflow/                   
+│   ├── dags/
+│   ├── Dockerfile
+│   ├── pyproject.toml
+│   └── poetry.lock
+│ 
+├── backend/                       
+│   ├── main.py                
+│   ├── requirements.txt       
+│   ├── Dockerfile
+│   ├── .env                   
+│   └── pyproject.toml         
+│
+├── frontend/             
+│   ├── streamlit_app.py                 
+│   ├── modules/               # Directory for reusable modules
+│   │   ├── openai_module.py   # OpenAI interaction module
+│   │   ├── sql_module.py      # SQL interaction module
+│   │   └── s3_module.py       # S3 interaction module
+│   ├── requirements.txt       
+│   ├── Dockerfile
+│   ├── .env                   
+│   └── pyproject.toml         
+│
+├── docker-compose.yml
+└── .env                       
