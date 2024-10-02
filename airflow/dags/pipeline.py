@@ -1,152 +1,126 @@
-from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
-from datetime import datetime, timedelta
 import os
 import requests
 from bs4 import BeautifulSoup
 from azure.storage.blob import BlobServiceClient
-from azure.ai.formrecognizer import DocumentAnalysisClient
-from azure.core.credentials import AzureKeyCredential
-import boto3
+from dotenv import load_dotenv
 
-# Environment variables for Hugging Face, Azure, and AWS
-HUGGINGFACE_API_KEY = os.getenv('HUGGINGFACE_API_KEY')
-AZURE_FORM_RECOGNIZER_ENDPOINT = os.getenv('AZURE_FORM_RECOGNIZER_ENDPOINT')
-AZURE_FORM_RECOGNIZER_KEY = os.getenv('AZURE_FORM_RECOGNIZER_KEY')
+# Load environment variables
+load_dotenv()
+
+# Get Hugging Face API Token
+huggingface_token = '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'
+
+# Azure Blob Storage Configuration
 AZURE_STORAGE_CONNECTION_STRING = os.getenv('AZURE_STORAGE_CONNECTION_STRING')
-AZURE_STORAGE_CONTAINER_NAME = os.getenv('AZURE_STORAGE_CONTAINER_NAME')
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-AWS_S3_BUCKET_NAME = os.getenv('AWS_S3_BUCKET_NAME')
+AZURE_STORAGE_CONTAINER_NAME = os.getenv('AZURE_STORAGE_CONTAINER_NAME_1')  # Container 1 for storing PDFs
 
-# URLs to download from
-URLS = [
-    "https://huggingface.co/datasets/gaia-benchmark/GAIA/tree/main/2023/test",
-    "https://huggingface.co/datasets/gaia-benchmark/GAIA/tree/main/2023/validation"
+# Initialize Azure Blob Service Client
+blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
+container_client = blob_service_client.get_container_client(AZURE_STORAGE_CONTAINER_NAME)
+
+# Hugging Face GAIA dataset URLs for validation and test
+huggingface_urls = [
+    "https://huggingface.co/datasets/gaia-benchmark/GAIA/tree/main/2023/validation",
+    "https://huggingface.co/datasets/gaia-benchmark/GAIA/tree/main/2023/test"
 ]
 
-default_args = {
-    'owner': 'airflow',
-    'depends_on_past': False,
-    'start_date': datetime(2024, 1, 1),
-    'retries': 2,
-    'retry_delay': timedelta(minutes=5),
-}
+# Supported file type - PDF only
+SUPPORTED_FILE_TYPE = '.pdf'
 
-dag = DAG(
-    'download_extract_store_pipeline',
-    default_args=default_args,
-    description='Download PDFs, extract text using Azure AI Document Intelligence, and store in AWS S3',
-    schedule_interval='@daily',
-    catchup=False,
-)
+# Local directory for downloading files
+download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
+os.makedirs(download_dir, exist_ok=True)  # Create downloads folder if it doesn't exist
 
-# Step 1: Download PDFs from Hugging Face URLs
-def download_pdfs():
-    headers = {'Authorization': f'Bearer {HUGGINGFACE_API_KEY}'}
-    pdf_urls = []  # List to hold the URLs of the PDFs
+def get_pdf_urls_from_huggingface(huggingface_url):
+    """Retrieve all PDF download URLs from the Hugging Face page."""
+    headers = {
+        "Authorization": f"Bearer {huggingface_token}"
+    }
+    
+    response = requests.get(huggingface_url, headers=headers)
+    
+    if response.status_code != 200:
+        print(f"Failed to retrieve the page: {huggingface_url}, status code: {response.status_code}")
+        return []
+    
+    # Parse the HTML page
+    soup = BeautifulSoup(response.text, 'html.parser')
+    pdf_urls = []
+    
+    # Find all <li> elements containing <a> tags, extract href attributes
+    for li in soup.find_all('li'):
+        link = li.find('a', href=True)
+        if link:
+            href = link.get('href')
+            
+            # Check if the href is a PDF file
+            if href.endswith(SUPPORTED_FILE_TYPE):
+                full_url = f"https://huggingface.co{href}".replace('/blob/', '/resolve/')
+                pdf_urls.append(full_url)
+                print(f"Found PDF URL: {full_url}")  # Debug: print matching file URLs
+    
+    if not pdf_urls:
+        print(f"No PDF files found on {huggingface_url}.")
+    
+    return pdf_urls
 
-    for url in URLS:
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()
+def download_file(url, local_path):
+    """Download file to local storage."""
+    headers = {
+        "Authorization": f"Bearer {huggingface_token}"
+    }
+    
+    try:
+        response = requests.get(url, headers=headers, stream=True)
+        if response.status_code == 200:
+            with open(local_path, 'wb') as f:
+                f.write(response.content)
+            print(f"Downloaded {url} to {local_path}")
+        else:
+            print(f"Failed to download {url}. Status code: {response.status_code}")
+    except Exception as e:
+        print(f"Error downloading {url}: {e}")
 
-        # Parse HTML to extract PDF URLs using BeautifulSoup
-        soup = BeautifulSoup(response.text, 'html.parser')
-        links = soup.find_all('a', href=True)
-        for link in links:
-            if link['href'].endswith('.pdf'):
-                pdf_urls.append(f"https://huggingface.co{link['href']}")
-
-    os.makedirs('/tmp/pdf_files', exist_ok=True)
-
-    for pdf_url in pdf_urls:
-        filename = pdf_url.split('/')[-1]
-        pdf_path = f'/tmp/pdf_files/{filename}'
-
-        response = requests.get(pdf_url, headers=headers, stream=True)
-        response.raise_for_status()
-
-        with open(pdf_path, 'wb') as file:
-            file.write(response.content)
-
-# Step 2: Upload PDFs to Azure Blob Storage
-def upload_to_azure_blob():
-    blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
-    container_client = blob_service_client.get_container_client(AZURE_STORAGE_CONTAINER_NAME)
-
-    for pdf_file in os.listdir('/tmp/pdf_files'):
-        file_path = os.path.join('/tmp/pdf_files', pdf_file)
-        blob_client = container_client.get_blob_client(pdf_file)
-
+def upload_to_azure(file_path, blob_name):
+    """Upload file to Azure Blob Storage (Container 1)."""
+    try:
+        blob_client = container_client.get_blob_client(blob_name)
         with open(file_path, 'rb') as data:
             blob_client.upload_blob(data, overwrite=True)
+        print(f"Uploaded {file_path} to Azure Blob as {blob_name}")
+    except Exception as e:
+        print(f"Error uploading {file_path} to Azure Blob: {e}")
 
-# Step 3: Extract Text Using Azure AI Document Intelligence
-def extract_text_from_pdf():
-    document_analysis_client = DocumentAnalysisClient(
-        endpoint=AZURE_FORM_RECOGNIZER_ENDPOINT,
-        credential=AzureKeyCredential(AZURE_FORM_RECOGNIZER_KEY)
-    )
-
-    blob_service_client = BlobServiceClient.from_connection_string(AZURE_STORAGE_CONNECTION_STRING)
-    container_client = blob_service_client.get_container_client(AZURE_STORAGE_CONTAINER_NAME)
-
-    extracted_texts = {}
-    for pdf_file in os.listdir('/tmp/pdf_files'):
-        blob_url = f"https://{AZURE_STORAGE_CONNECTION_STRING.split(';')[1].split('=')[1]}.blob.core.windows.net/{AZURE_STORAGE_CONTAINER_NAME}/{pdf_file}"
+def process_pdfs_and_upload():
+    """Download PDFs from Hugging Face and upload them to Azure Blob Storage."""
+    for huggingface_url in huggingface_urls:
+        # Step 1: Get the PDF URLs
+        pdf_urls = get_pdf_urls_from_huggingface(huggingface_url)
         
-        poller = document_analysis_client.begin_analyze_document_from_url("prebuilt-document", blob_url)
-        result = poller.result()
+        if not pdf_urls:
+            print("No PDF files found to download.")
+            continue
         
-        extracted_text = []
-        for page in result.pages:
-            for line in page.lines:
-                extracted_text.append(line.content)
-        
-        extracted_texts[pdf_file] = "\n".join(extracted_text)
-    
-    # Save extracted text locally for the next step
-    os.makedirs('/tmp/extracted_texts', exist_ok=True)
-    for filename, text in extracted_texts.items():
-        with open(f'/tmp/extracted_texts/{filename}.txt', 'w') as file:
-            file.write(text)
+        # Step 2: Download and upload each PDF file
+        for pdf_url in pdf_urls:
+            file_name = pdf_url.split('/')[-1]  # Extract the file name from the URL
+            local_path = os.path.join(download_dir, file_name)  # Local file path in the Downloads folder
+            
+            # Download the PDF to local
+            download_file(pdf_url, local_path)
+            
+            # Check if the file was successfully downloaded
+            if os.path.exists(local_path):
+                print(f"File {local_path} successfully downloaded.")
+                
+                # Upload the PDF to Azure Blob Storage (Container 1)
+                upload_to_azure(local_path, file_name)
+                
+                # Optional: Delete the local file after uploading to Azure Blob
+                os.remove(local_path)
+                print(f"Deleted local file: {local_path}")
+            else:
+                print(f"File {local_path} not found, skipping upload.")
 
-# Step 4: Store Extracted Text in AWS S3
-def store_text_in_s3():
-    s3_client = boto3.client(
-        's3',
-        aws_access_key_id=AWS_ACCESS_KEY_ID,
-        aws_secret_access_key=AWS_SECRET_ACCESS_KEY
-    )
-
-    for text_file in os.listdir('/tmp/extracted_texts'):
-        file_path = os.path.join('/tmp/extracted_texts', text_file)
-        s3_client.upload_file(file_path, AWS_S3_BUCKET_NAME, text_file)
-
-# Define the DAG tasks
-download_task = PythonOperator(
-    task_id='download_pdfs',
-    python_callable=download_pdfs,
-    dag=dag,
-)
-
-upload_task = PythonOperator(
-    task_id='upload_to_azure_blob',
-    python_callable=upload_to_azure_blob,
-    dag=dag,
-)
-
-extract_task = PythonOperator(
-    task_id='extract_text_from_pdf',
-    python_callable=extract_text_from_pdf,
-    dag=dag,
-)
-
-store_task = PythonOperator(
-    task_id='store_text_in_s3',
-    python_callable=store_text_in_s3,
-    dag=dag,
-)
-
-# Set task dependencies
-download_task >> upload_task >> extract_task >> store_task
+# Execute the download and upload process
+process_pdfs_and_upload()
