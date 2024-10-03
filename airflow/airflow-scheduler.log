@@ -1,0 +1,21 @@
+2024-10-03 04:30:22,724 INFO - Loaded executor: SequentialExecutor
+2024-10-03 04:30:23,530 INFO - Starting the scheduler
+2024-10-03 04:30:23,542 INFO - Processing each file at most -1 times
+2024-10-03 04:30:23,563 INFO - Launched DagFileProcessorManager with pid: 96903
+2024-10-03 04:30:23,572 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-10-03 04:30:23,575 INFO - Configured default timezone UTC
+2024-10-03 04:31:38,037 INFO - Setting next_dagrun for huggingface_pdf_pipeline to 2024-10-02 00:00:00+00:00, run_after=2024-10-03 00:00:00+00:00
+2024-10-03 04:31:39,092 INFO - 2 tasks up for execution:
+	<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task scheduled__2024-10-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task manual__2024-10-03T08:31:36.535474+00:00 [scheduled]>
+2024-10-03 04:31:39,096 INFO - DAG huggingface_pdf_pipeline has 0/16 running and queued tasks
+2024-10-03 04:31:39,097 INFO - DAG huggingface_pdf_pipeline has 1/16 running and queued tasks
+2024-10-03 04:31:39,097 INFO - Setting the following tasks to queued state:
+	<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task scheduled__2024-10-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task manual__2024-10-03T08:31:36.535474+00:00 [scheduled]>
+2024-10-03 04:31:39,133 INFO - Trying to enqueue tasks: [<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task scheduled__2024-10-01T00:00:00+00:00 [scheduled]>, <TaskInstance: huggingface_pdf_pipeline.process_pdfs_task manual__2024-10-03T08:31:36.535474+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+2024-10-03 04:31:39,135 INFO - Sending TaskInstanceKey(dag_id='huggingface_pdf_pipeline', task_id='process_pdfs_task', run_id='scheduled__2024-10-01T00:00:00+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 1 and queue default
+2024-10-03 04:31:39,135 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'huggingface_pdf_pipeline', 'process_pdfs_task', 'scheduled__2024-10-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/huggingface_pdf_airflow_dag.py']
+2024-10-03 04:31:39,136 INFO - Sending TaskInstanceKey(dag_id='huggingface_pdf_pipeline', task_id='process_pdfs_task', run_id='manual__2024-10-03T08:31:36.535474+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 1 and queue default
+2024-10-03 04:31:39,136 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'huggingface_pdf_pipeline', 'process_pdfs_task', 'manual__2024-10-03T08:31:36.535474+00:00', '--local', '--subdir', 'DAGS_FOLDER/huggingface_pdf_airflow_dag.py']
+2024-10-03 04:31:39,171 INFO - Executing command: ['airflow', 'tasks', 'run', 'huggingface_pdf_pipeline', 'process_pdfs_task', 'scheduled__2024-10-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/huggingface_pdf_airflow_dag.py']
