@@ -868,3 +868,10 @@
 [2024-10-03T04:37:20.230-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:37:20.230-0400] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-03T04:37:20.290-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:37:20.290-0400] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
 [2024-10-03T04:37:20.742-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 1.314 seconds
+[2024-10-03T04:38:35.257-0400] {processor.py:186} INFO - Started process (PID=99607) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-10-03T04:38:35.258-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2024-10-03T04:38:35.260-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:38:35.259-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-10-03T04:38:35.265-0400] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-10-03T04:38:36.160-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:38:36.160-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:38:36.205-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:38:36.205-0400] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2024-10-03T04:38:36.713-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 1.459 seconds
