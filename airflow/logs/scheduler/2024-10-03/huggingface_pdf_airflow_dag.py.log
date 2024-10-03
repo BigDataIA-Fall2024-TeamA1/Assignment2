@@ -139,3 +139,31 @@
 [2024-10-03T04:44:39.437-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:44:39.436-0400] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-03T04:44:39.554-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:44:39.554-0400] {dag.py:4180} INFO - Setting next_dagrun for huggingface_pdf_pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
 [2024-10-03T04:44:40.052-0400] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py took 1.745 seconds
+[2024-10-03T04:45:23.142-0400] {processor.py:186} INFO - Started process (PID=101763) to work on /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:45:23.143-0400] {processor.py:914} INFO - Processing file /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py for tasks to queue
+[2024-10-03T04:45:23.145-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:45:23.144-0400] {dagbag.py:588} INFO - Filling up the DagBag from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:45:23.289-0400] {processor.py:925} INFO - DAG(s) 'huggingface_pdf_pipeline' retrieved from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:45:24.114-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:45:24.114-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:45:24.230-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:45:24.230-0400] {dag.py:4180} INFO - Setting next_dagrun for huggingface_pdf_pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T04:45:24.737-0400] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py took 1.598 seconds
+[2024-10-03T04:46:07.207-0400] {processor.py:186} INFO - Started process (PID=101992) to work on /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:46:07.208-0400] {processor.py:914} INFO - Processing file /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py for tasks to queue
+[2024-10-03T04:46:07.210-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:46:07.209-0400] {dagbag.py:588} INFO - Filling up the DagBag from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:46:07.452-0400] {processor.py:925} INFO - DAG(s) 'huggingface_pdf_pipeline' retrieved from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:46:08.238-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:46:08.238-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:46:08.374-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:46:08.373-0400] {dag.py:4180} INFO - Setting next_dagrun for huggingface_pdf_pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T04:46:08.858-0400] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py took 1.654 seconds
+[2024-10-03T04:46:50.891-0400] {processor.py:186} INFO - Started process (PID=102218) to work on /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:46:50.892-0400] {processor.py:914} INFO - Processing file /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py for tasks to queue
+[2024-10-03T04:46:50.893-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:46:50.893-0400] {dagbag.py:588} INFO - Filling up the DagBag from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:46:51.035-0400] {processor.py:925} INFO - DAG(s) 'huggingface_pdf_pipeline' retrieved from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:46:51.815-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:46:51.815-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:46:51.932-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:46:51.931-0400] {dag.py:4180} INFO - Setting next_dagrun for huggingface_pdf_pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T04:46:52.433-0400] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py took 1.545 seconds
+[2024-10-03T04:47:30.822-0400] {processor.py:186} INFO - Started process (PID=102422) to work on /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:47:30.823-0400] {processor.py:914} INFO - Processing file /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py for tasks to queue
+[2024-10-03T04:47:30.825-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:30.825-0400] {dagbag.py:588} INFO - Filling up the DagBag from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:47:30.960-0400] {processor.py:925} INFO - DAG(s) 'huggingface_pdf_pipeline' retrieved from /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py
+[2024-10-03T04:47:31.730-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:31.730-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:47:31.839-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:31.839-0400] {dag.py:4180} INFO - Setting next_dagrun for huggingface_pdf_pipeline to 2024-10-03 00:00:00+00:00, run_after=2024-10-04 00:00:00+00:00
+[2024-10-03T04:47:32.305-0400] {processor.py:208} INFO - Processing /mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/dags/huggingface_pdf_airflow_dag.py took 1.486 seconds
