@@ -1,5 +1,0 @@
-[2024-10-03 04:30:22 -0400] [96896] [INFO] Starting gunicorn 23.0.0
-[2024-10-03 04:30:22 -0400] [96896] [INFO] Listening at: http://[::]:8793 (96896)
-[2024-10-03 04:30:22 -0400] [96896] [INFO] Using worker: sync
-[2024-10-03 04:30:22 -0400] [96898] [INFO] Booting worker with pid: 96898
-[2024-10-03 04:30:22 -0400] [96899] [INFO] Booting worker with pid: 96899

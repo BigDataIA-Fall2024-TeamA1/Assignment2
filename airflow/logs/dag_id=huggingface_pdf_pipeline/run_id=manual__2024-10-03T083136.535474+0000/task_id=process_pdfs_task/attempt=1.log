@@ -1,0 +1,1551 @@
+[2024-10-03T04:34:13.565-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T04:34:14.045-0400] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task manual__2024-10-03T08:31:36.535474+00:00 [queued]>
+[2024-10-03T04:34:14.198-0400] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: huggingface_pdf_pipeline.process_pdfs_task manual__2024-10-03T08:31:36.535474+00:00 [queued]>
+[2024-10-03T04:34:14.199-0400] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T04:34:14.408-0400] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): process_pdfs_task> on 2024-10-03 08:31:36.535474+00:00
+[2024-10-03T04:34:14.414-0400] {standard_task_runner.py:72} INFO - Started process 98188 to run task
+[2024-10-03T04:34:14.418-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'huggingface_pdf_pipeline', 'process_pdfs_task', 'manual__2024-10-03T08:31:36.535474+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/huggingface_pdf_airflow_dag.py', '--cfg-path', '/tmp/tmpng3btqeq']
+[2024-10-03T04:34:14.421-0400] {standard_task_runner.py:105} INFO - Job 10: Subtask process_pdfs_task
+[2024-10-03T04:34:16.251-0400] {task_command.py:467} INFO - Running <TaskInstance: huggingface_pdf_pipeline.process_pdfs_task manual__2024-10-03T08:31:36.535474+00:00 [running]> on host LAPTOP-GD5THE3N.
+[2024-10-03T04:34:18.420-0400] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='huggingface_pdf_pipeline' AIRFLOW_CTX_TASK_ID='process_pdfs_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-03T08:31:36.535474+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-03T08:31:36.535474+00:00'
+[2024-10-03T04:34:18.423-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-03T04:34:18.425-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-03T04:34:18.426-0400] {logging_mixin.py:190} INFO - Current task name:process_pdfs_task state:running start_date:2024-10-03 08:34:14.048827+00:00
+[2024-10-03T04:34:18.427-0400] {logging_mixin.py:190} INFO - Dag name:huggingface_pdf_pipeline and current dag run status:running
+[2024-10-03T04:34:18.428-0400] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T04:34:18.835-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf
+[2024-10-03T04:34:18.837-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf
+[2024-10-03T04:34:18.840-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf
+[2024-10-03T04:34:19.119-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf to /home/patrick/Downloads/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf
+[2024-10-03T04:34:19.123-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '53956'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4847ff5a-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:19.428-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:18 GMT'
+    'ETag': '"0x8DCE3862C4FC17C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88e838-701e-00d5-1f6f-150af7000000'
+    'x-ms-client-request-id': '4847ff5a-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:18 GMT'
+[2024-10-03T04:34:19.431-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf to Azure Blob Storage Container 1 as 366e2f2b-8632-4ef2-81eb-bc3877489217.pdf
+[2024-10-03T04:34:19.433-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf...
+[2024-10-03T04:34:19.438-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '4847ff5b-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:19.778-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/9aee502d-42fb-4285-bed3-439e901cf9e2?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '64'
+    'apim-request-id': '9aee502d-42fb-4285-bed3-439e901cf9e2'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:18 GMT'
+[2024-10-03T04:34:19.782-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/9aee502d-42fb-4285-bed3-439e901cf9e2?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '4847ff5b-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:19.837-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '2'
+    'x-envoy-upstream-service-time': '17'
+    'apim-request-id': 'd807e8c6-4dbd-4f5f-9cf8-2fe3795241ce'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:18 GMT'
+[2024-10-03T04:34:21.841-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/9aee502d-42fb-4285-bed3-439e901cf9e2?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '4847ff5b-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:21.963-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '86599'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '31'
+    'apim-request-id': '31a284eb-511e-4571-b498-21d02a3a81d3'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:21 GMT'
+[2024-10-03T04:34:22.006-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/366e2f2b-8632-4ef2-81eb-bc3877489217_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '1979'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '49ffe132-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:22.059-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:21 GMT'
+    'ETag': '"0x8DCE3862DE2F198"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88eb2f-701e-00d5-5b6f-150af7000000'
+    'x-ms-client-request-id': '49ffe132-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:20 GMT'
+[2024-10-03T04:34:22.062-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 366e2f2b-8632-4ef2-81eb-bc3877489217_extracted.txt
+[2024-10-03T04:34:22.066-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf
+[2024-10-03T04:34:22.332-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf to /home/patrick/Downloads/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf
+[2024-10-03T04:34:22.336-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '53956'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '49ffe133-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:22.460-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:21 GMT'
+    'ETag': '"0x8DCE3862E200B14"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88eb8d-701e-00d5-306f-150af7000000'
+    'x-ms-client-request-id': '49ffe133-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:21 GMT'
+[2024-10-03T04:34:22.463-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf to Azure Blob Storage Container 1 as 67e8878b-5cef-4375-804e-e6291fdbe78a.pdf
+[2024-10-03T04:34:22.467-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf...
+[2024-10-03T04:34:22.469-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '49ffe134-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:22.803-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/b68eeaee-6ebd-44ae-8f3b-1c1d0a03e20c?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '54'
+    'apim-request-id': 'b68eeaee-6ebd-44ae-8f3b-1c1d0a03e20c'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:21 GMT'
+[2024-10-03T04:34:22.810-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/b68eeaee-6ebd-44ae-8f3b-1c1d0a03e20c?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '49ffe134-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:22.862-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '2'
+    'x-envoy-upstream-service-time': '20'
+    'apim-request-id': '391af9d2-92b9-49be-a066-2add133a01e3'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:21 GMT'
+[2024-10-03T04:34:24.866-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/b68eeaee-6ebd-44ae-8f3b-1c1d0a03e20c?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '49ffe134-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:25.159-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '86599'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '29'
+    'apim-request-id': '278fdc85-7173-4c60-b001-33c9a7193846'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:23 GMT'
+[2024-10-03T04:34:25.195-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/67e8878b-5cef-4375-804e-e6291fdbe78a_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '1979'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4be67de4-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:25.296-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:24 GMT'
+    'ETag': '"0x8DCE3862FCBF914"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88eef1-701e-00d5-5f6f-150af7000000'
+    'x-ms-client-request-id': '4be67de4-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:24 GMT'
+[2024-10-03T04:34:25.300-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 67e8878b-5cef-4375-804e-e6291fdbe78a_extracted.txt
+[2024-10-03T04:34:25.307-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf
+[2024-10-03T04:34:26.127-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf to /home/patrick/Downloads/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf
+[2024-10-03T04:34:26.207-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64453'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4be67de5-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:26.722-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:26 GMT'
+    'ETag': '"0x8DCE38630A73E68"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88efc4-701e-00d5-256f-150af7000000'
+    'x-ms-client-request-id': '4be67de5-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:25 GMT'
+[2024-10-03T04:34:26.726-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf to Azure Blob Storage Container 1 as e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf
+[2024-10-03T04:34:26.727-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf...
+[2024-10-03T04:34:26.728-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '4be67de6-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:27.323-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/8099a811-fbe6-4b5e-9392-7286607f2b99?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '74'
+    'apim-request-id': '8099a811-fbe6-4b5e-9392-7286607f2b99'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:26 GMT'
+[2024-10-03T04:34:27.328-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/8099a811-fbe6-4b5e-9392-7286607f2b99?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '4be67de6-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:27.409-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '17'
+    'apim-request-id': 'b9b17dbb-9033-4ba2-8ad3-a5be07cf303d'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:26 GMT'
+[2024-10-03T04:34:30.414-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/8099a811-fbe6-4b5e-9392-7286607f2b99?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '4be67de6-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:30.596-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '155889'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '35'
+    'apim-request-id': 'fd50a46a-1d7d-47c9-a735-9eea0671ecbf'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:29 GMT'
+[2024-10-03T04:34:30.662-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/e9a2c537-8232-4c3f-85b0-b52de6bcba99_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '3723'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4f28ac84-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:30.718-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:30 GMT'
+    'ETag': '"0x8DCE386330C61C4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88f564-701e-00d5-336f-150af7000000'
+    'x-ms-client-request-id': '4f28ac84-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:29 GMT'
+[2024-10-03T04:34:30.724-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as e9a2c537-8232-4c3f-85b0-b52de6bcba99_extracted.txt
+[2024-10-03T04:34:30.731-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf
+[2024-10-03T04:34:30.992-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf
+[2024-10-03T04:34:30.995-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/32f386b9-73ee-4455-b412-ddad508aa979.pdf
+[2024-10-03T04:34:30.997-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf
+[2024-10-03T04:34:30.999-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf
+[2024-10-03T04:34:31.001-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf
+[2024-10-03T04:34:31.005-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf
+[2024-10-03T04:34:31.006-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/8f697523-6988-4c4f-8d72-760a45681f68.pdf
+[2024-10-03T04:34:31.008-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/b3654e47-4307-442c-a09c-945b33b913c6.pdf
+[2024-10-03T04:34:31.009-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/be353748-74eb-4904-8f17-f180ce087f1a.pdf
+[2024-10-03T04:34:31.011-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf
+[2024-10-03T04:34:31.280-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf to /home/patrick/Downloads/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf
+[2024-10-03T04:34:31.284-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64453'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '4f28ac85-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:31.483-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:30 GMT'
+    'ETag': '"0x8DCE38633809A0C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d88f618-701e-00d5-5b6f-150af7000000'
+    'x-ms-client-request-id': '4f28ac85-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:30 GMT'
+[2024-10-03T04:34:31.484-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf to Azure Blob Storage Container 1 as 021a5339-744f-42b7-bd9b-9368b3efda7a.pdf
+[2024-10-03T04:34:31.487-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf...
+[2024-10-03T04:34:31.489-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '4f28ac86-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:31.923-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/e411d3e0-ebdb-428a-b2f8-155d758cc9e0?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '53'
+    'apim-request-id': 'e411d3e0-ebdb-428a-b2f8-155d758cc9e0'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:30 GMT'
+[2024-10-03T04:34:31.925-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/e411d3e0-ebdb-428a-b2f8-155d758cc9e0?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '4f28ac86-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:31.957-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '285'
+    'Content-Type': 'application/json'
+    'Retry-After': '20'
+    'apim-request-id': '53ccf2aa-fe76-48c6-938d-a47a6f1e6add'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:30 GMT'
+[2024-10-03T04:34:51.984-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/e411d3e0-ebdb-428a-b2f8-155d758cc9e0?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '4f28ac86-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:52.173-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '155889'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '29'
+    'apim-request-id': 'e804ed99-94f0-4d72-93ee-11e3c093addc'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:50 GMT'
+[2024-10-03T04:34:52.294-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/021a5339-744f-42b7-bd9b-9368b3efda7a_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '3723'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c0d93b0-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:52.347-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:51 GMT'
+    'ETag': '"0x8DCE3863FF0BC38"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d890a0a-701e-00d5-4e6f-150af7000000'
+    'x-ms-client-request-id': '5c0d93b0-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:51 GMT'
+[2024-10-03T04:34:52.349-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 021a5339-744f-42b7-bd9b-9368b3efda7a_extracted.txt
+[2024-10-03T04:34:52.349-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf
+[2024-10-03T04:34:52.652-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/32f386b9-73ee-4455-b412-ddad508aa979.pdf to /home/patrick/Downloads/32f386b9-73ee-4455-b412-ddad508aa979.pdf
+[2024-10-03T04:34:52.655-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/32f386b9-73ee-4455-b412-ddad508aa979.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '52620'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5c0d93b1-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:52.812-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:52 GMT'
+    'ETag': '"0x8DCE38640374D28"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d890a5b-701e-00d5-156f-150af7000000'
+    'x-ms-client-request-id': '5c0d93b1-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:51 GMT'
+[2024-10-03T04:34:52.815-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/32f386b9-73ee-4455-b412-ddad508aa979.pdf to Azure Blob Storage Container 1 as 32f386b9-73ee-4455-b412-ddad508aa979.pdf
+[2024-10-03T04:34:52.816-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/32f386b9-73ee-4455-b412-ddad508aa979.pdf...
+[2024-10-03T04:34:52.817-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '5c0d93b2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:53.169-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/07d60798-ea90-470b-b9d3-a8e6f243dc11?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '76'
+    'apim-request-id': '07d60798-ea90-470b-b9d3-a8e6f243dc11'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:52 GMT'
+[2024-10-03T04:34:53.172-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/07d60798-ea90-470b-b9d3-a8e6f243dc11?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5c0d93b2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:53.210-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '283'
+    'Content-Type': 'application/json'
+    'Retry-After': '1'
+    'apim-request-id': '2ee577b5-5cd8-40fe-98ad-ae777045d42a'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:52 GMT'
+[2024-10-03T04:34:54.213-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/07d60798-ea90-470b-b9d3-a8e6f243dc11?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5c0d93b2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:54.271-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '1'
+    'x-envoy-upstream-service-time': '16'
+    'apim-request-id': '646c4a4a-d380-457f-9d89-c1b6e9f44e46'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:53 GMT'
+[2024-10-03T04:34:55.274-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/07d60798-ea90-470b-b9d3-a8e6f243dc11?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5c0d93b2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:55.304-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '283'
+    'Content-Type': 'application/json'
+    'Retry-After': '1'
+    'apim-request-id': '0bcc5a05-2340-4a14-b535-19e818bdfd54'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:54 GMT'
+[2024-10-03T04:34:56.307-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/07d60798-ea90-470b-b9d3-a8e6f243dc11?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5c0d93b2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:56.450-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '81800'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '32'
+    'apim-request-id': 'a6ab7cee-73e3-45d2-8d14-d6c1cc979b6c'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:55 GMT'
+[2024-10-03T04:34:56.482-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/32f386b9-73ee-4455-b412-ddad508aa979_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '2226'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5e8c8dd0-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:56.536-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:55 GMT'
+    'ETag': '"0x8DCE386426F9E94"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d890e15-701e-00d5-7b6f-150af7000000'
+    'x-ms-client-request-id': '5e8c8dd0-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:55 GMT'
+[2024-10-03T04:34:56.538-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 32f386b9-73ee-4455-b412-ddad508aa979_extracted.txt
+[2024-10-03T04:34:56.542-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/32f386b9-73ee-4455-b412-ddad508aa979.pdf
+[2024-10-03T04:34:56.911-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf to /home/patrick/Downloads/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf
+[2024-10-03T04:34:56.914-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64453'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '5e8c8dd1-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:57.075-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:34:56 GMT'
+    'ETag': '"0x8DCE38642C1CD04"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d890e92-701e-00d5-6e6f-150af7000000'
+    'x-ms-client-request-id': '5e8c8dd1-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:34:55 GMT'
+[2024-10-03T04:34:57.078-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf to Azure Blob Storage Container 1 as 4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf
+[2024-10-03T04:34:57.079-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf...
+[2024-10-03T04:34:57.081-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '5e8c8dd2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:57.298-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '281'
+    'Content-Type': 'application/json'
+    'Retry-After': '1'
+    'apim-request-id': '589b9f47-7043-46e9-8cd4-d24e589619f9'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:55 GMT'
+[2024-10-03T04:34:58.302-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '5e8c8dd2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:34:58.466-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/ec7d6593-b2c3-4126-9e27-85b097e3a66a?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '52'
+    'apim-request-id': 'ec7d6593-b2c3-4126-9e27-85b097e3a66a'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:57 GMT'
+[2024-10-03T04:34:58.468-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/ec7d6593-b2c3-4126-9e27-85b097e3a66a?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5e8c8dd2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:58.495-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '283'
+    'Content-Type': 'application/json'
+    'Retry-After': '1'
+    'apim-request-id': 'e1e3b7bd-e743-4941-9383-b9f22c43f5de'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:57 GMT'
+[2024-10-03T04:34:59.498-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/ec7d6593-b2c3-4126-9e27-85b097e3a66a?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5e8c8dd2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:34:59.550-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '2'
+    'x-envoy-upstream-service-time': '17'
+    'apim-request-id': '7f7d65bf-26ad-4fd6-9045-af5b0e5948c8'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:34:58 GMT'
+[2024-10-03T04:35:01.554-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/ec7d6593-b2c3-4126-9e27-85b097e3a66a?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '5e8c8dd2-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:01.754-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '155889'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '32'
+    'apim-request-id': '8886b246-6a07-4dd2-9a23-3400c3a2d618'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:00 GMT'
+[2024-10-03T04:35:01.810-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/4044eab7-1282-42bd-a559-3bf3a4d5858e_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '3723'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '61b99a98-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:01.860-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:01 GMT'
+    'ETag': '"0x8DCE386459C0E90"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d891516-701e-00d5-206f-150af7000000'
+    'x-ms-client-request-id': '61b99a98-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:00 GMT'
+[2024-10-03T04:35:01.863-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 4044eab7-1282-42bd-a559-3bf3a4d5858e_extracted.txt
+[2024-10-03T04:35:01.866-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf
+[2024-10-03T04:35:02.193-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf to /home/patrick/Downloads/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf
+[2024-10-03T04:35:02.195-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '109318'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '61b99a99-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:02.412-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:01 GMT'
+    'ETag': '"0x8DCE38645F04C90"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d8915ae-701e-00d5-2f6f-150af7000000'
+    'x-ms-client-request-id': '61b99a99-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:01 GMT'
+[2024-10-03T04:35:02.415-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf to Azure Blob Storage Container 1 as 634fca59-03b2-4cdf-9ce4-0205df22f256.pdf
+[2024-10-03T04:35:02.416-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf...
+[2024-10-03T04:35:02.418-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '61b99a9a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:02.761-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/40fd628d-ec7f-41f1-9321-45d6fa32c751?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '59'
+    'apim-request-id': '40fd628d-ec7f-41f1-9321-45d6fa32c751'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:01 GMT'
+[2024-10-03T04:35:02.764-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/40fd628d-ec7f-41f1-9321-45d6fa32c751?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '61b99a9a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:02.799-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '283'
+    'Content-Type': 'application/json'
+    'Retry-After': '1'
+    'apim-request-id': '4484c272-e229-4151-94fa-c34c92a9d95c'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:01 GMT'
+[2024-10-03T04:35:03.803-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/40fd628d-ec7f-41f1-9321-45d6fa32c751?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '61b99a9a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:03.863-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '1'
+    'x-envoy-upstream-service-time': '18'
+    'apim-request-id': 'a512f599-782b-4d91-b337-266aa4b64ca1'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:02 GMT'
+[2024-10-03T04:35:04.867-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/40fd628d-ec7f-41f1-9321-45d6fa32c751?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '61b99a9a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:04.971-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '37932'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '28'
+    'apim-request-id': '5d863951-bcdc-4c5f-9af8-81cd91566246'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:03 GMT'
+[2024-10-03T04:35:04.988-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/634fca59-03b2-4cdf-9ce4-0205df22f256_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '1402'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '639e6e06-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:05.040-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:04 GMT'
+    'ETag': '"0x8DCE3864780EC04"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d8919a4-701e-00d5-806f-150af7000000'
+    'x-ms-client-request-id': '639e6e06-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:03 GMT'
+[2024-10-03T04:35:05.042-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 634fca59-03b2-4cdf-9ce4-0205df22f256_extracted.txt
+[2024-10-03T04:35:05.043-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf
+[2024-10-03T04:35:05.296-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf to /home/patrick/Downloads/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf
+[2024-10-03T04:35:05.299-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64453'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '639e6e07-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:05.450-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:04 GMT'
+    'ETag': '"0x8DCE38647BFD97C"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d891a1e-701e-00d5-766f-150af7000000'
+    'x-ms-client-request-id': '639e6e07-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:04 GMT'
+[2024-10-03T04:35:05.452-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf to Azure Blob Storage Container 1 as 680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf
+[2024-10-03T04:35:05.453-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf...
+[2024-10-03T04:35:05.454-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '639e6e08-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:05.647-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '283'
+    'Content-Type': 'application/json'
+    'Retry-After': '14'
+    'apim-request-id': '6f385c89-57e6-4813-9eca-888dde11c525'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:04 GMT'
+[2024-10-03T04:35:19.664-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '639e6e08-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:19.837-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/175fd4f3-b2f3-41e7-9756-d13df6d5ae60?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '54'
+    'apim-request-id': '175fd4f3-b2f3-41e7-9756-d13df6d5ae60'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:18 GMT'
+[2024-10-03T04:35:19.841-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/175fd4f3-b2f3-41e7-9756-d13df6d5ae60?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '639e6e08-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:19.894-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '17'
+    'apim-request-id': '1cae8f2b-4e48-43a7-86c1-ed3e029a0599'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:19 GMT'
+[2024-10-03T04:35:22.900-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/175fd4f3-b2f3-41e7-9756-d13df6d5ae60?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '639e6e08-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:23.078-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '155889'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '38'
+    'apim-request-id': '7a089242-b5a1-440a-8d09-80c380b56bf7'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:22 GMT'
+[2024-10-03T04:35:23.141-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/680d7d77-c0c7-49c8-88fd-f8ec623645e9_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '3723'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6e7057d6-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:23.196-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:22 GMT'
+    'ETag': '"0x8DCE38652539C84"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d892e64-701e-00d5-7e6f-150af7000000'
+    'x-ms-client-request-id': '6e7057d6-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:21 GMT'
+[2024-10-03T04:35:23.202-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 680d7d77-c0c7-49c8-88fd-f8ec623645e9_extracted.txt
+[2024-10-03T04:35:23.205-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf
+[2024-10-03T04:35:23.504-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf to /home/patrick/Downloads/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf
+[2024-10-03T04:35:23.506-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '52620'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '6e7057d7-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:23.623-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:23 GMT'
+    'ETag': '"0x8DCE3865294B158"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d892ee0-701e-00d5-6f6f-150af7000000'
+    'x-ms-client-request-id': '6e7057d7-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:22 GMT'
+[2024-10-03T04:35:23.626-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf to Azure Blob Storage Container 1 as 7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf
+[2024-10-03T04:35:23.627-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf...
+[2024-10-03T04:35:23.628-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '6e7057d8-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:23.958-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/d188e2bc-3f30-42b5-92b7-42a8e15c4227?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '56'
+    'apim-request-id': 'd188e2bc-3f30-42b5-92b7-42a8e15c4227'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:23 GMT'
+[2024-10-03T04:35:23.961-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/d188e2bc-3f30-42b5-92b7-42a8e15c4227?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '6e7057d8-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:24.024-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '2'
+    'x-envoy-upstream-service-time': '16'
+    'apim-request-id': 'a2231a6e-eeb7-424a-a22d-c31228e909d6'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:23 GMT'
+[2024-10-03T04:35:26.027-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/d188e2bc-3f30-42b5-92b7-42a8e15c4227?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '6e7057d8-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:26.167-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '81800'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '32'
+    'apim-request-id': '82962e70-5d46-43b9-a1c6-4b1852fed0fc'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:25 GMT'
+[2024-10-03T04:35:26.245-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/7c215d46-91c7-424e-9f22-37d43ab73ea6_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '2226'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '704a1178-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:26.329-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:25 GMT'
+    'ETag': '"0x8DCE386542F3640"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d8931dc-701e-00d5-3c6f-150af7000000'
+    'x-ms-client-request-id': '704a1178-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:25 GMT'
+[2024-10-03T04:35:26.332-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 7c215d46-91c7-424e-9f22-37d43ab73ea6_extracted.txt
+[2024-10-03T04:35:26.334-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf
+[2024-10-03T04:35:26.698-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/8f697523-6988-4c4f-8d72-760a45681f68.pdf to /home/patrick/Downloads/8f697523-6988-4c4f-8d72-760a45681f68.pdf
+[2024-10-03T04:35:26.701-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/8f697523-6988-4c4f-8d72-760a45681f68.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '235914'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '704a1179-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:27.048-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:26 GMT'
+    'ETag': '"0x8DCE386549F65F4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d893244-701e-00d5-1e6f-150af7000000'
+    'x-ms-client-request-id': '704a1179-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:25 GMT'
+[2024-10-03T04:35:27.049-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/8f697523-6988-4c4f-8d72-760a45681f68.pdf to Azure Blob Storage Container 1 as 8f697523-6988-4c4f-8d72-760a45681f68.pdf
+[2024-10-03T04:35:27.051-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/8f697523-6988-4c4f-8d72-760a45681f68.pdf...
+[2024-10-03T04:35:27.052-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '704a117a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:27.449-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/109ff705-e75b-4af6-8853-addabd409d04?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '55'
+    'apim-request-id': '109ff705-e75b-4af6-8853-addabd409d04'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:25 GMT'
+[2024-10-03T04:35:27.453-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/109ff705-e75b-4af6-8853-addabd409d04?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '704a117a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:27.508-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '18'
+    'apim-request-id': '865947c5-8d87-41f4-9889-d1d33b77cd7e'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:25 GMT'
+[2024-10-03T04:35:30.515-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/109ff705-e75b-4af6-8853-addabd409d04?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '704a117a-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:30.680-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '135968'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '30'
+    'apim-request-id': 'bef75e87-4508-4ec2-9770-08946cb8ec39'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:29 GMT'
+[2024-10-03T04:35:30.732-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/8f697523-6988-4c4f-8d72-760a45681f68_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '4875'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '72f6bc50-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:30.784-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:30 GMT'
+    'ETag': '"0x8DCE38656D97104"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d8936cf-701e-00d5-0e6f-150af7000000'
+    'x-ms-client-request-id': '72f6bc50-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:29 GMT'
+[2024-10-03T04:35:30.786-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as 8f697523-6988-4c4f-8d72-760a45681f68_extracted.txt
+[2024-10-03T04:35:30.787-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/8f697523-6988-4c4f-8d72-760a45681f68.pdf
+[2024-10-03T04:35:31.053-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/b3654e47-4307-442c-a09c-945b33b913c6.pdf to /home/patrick/Downloads/b3654e47-4307-442c-a09c-945b33b913c6.pdf
+[2024-10-03T04:35:31.056-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/b3654e47-4307-442c-a09c-945b33b913c6.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64453'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '72f6bc51-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:31.182-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:30 GMT'
+    'ETag': '"0x8DCE3865715F1B4"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d893725-701e-00d5-606f-150af7000000'
+    'x-ms-client-request-id': '72f6bc51-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:29 GMT'
+[2024-10-03T04:35:31.184-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/b3654e47-4307-442c-a09c-945b33b913c6.pdf to Azure Blob Storage Container 1 as b3654e47-4307-442c-a09c-945b33b913c6.pdf
+[2024-10-03T04:35:31.186-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/b3654e47-4307-442c-a09c-945b33b913c6.pdf...
+[2024-10-03T04:35:31.188-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '72f6bc52-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:31.385-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '281'
+    'Content-Type': 'application/json'
+    'Retry-After': '1'
+    'apim-request-id': '2674501a-abb2-48f6-ba41-33421b8b7cda'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:30 GMT'
+[2024-10-03T04:35:32.388-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '72f6bc52-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:32.600-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/e98e2a80-ff0e-4fea-a8d7-c3b6af271a43?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '91'
+    'apim-request-id': 'e98e2a80-ff0e-4fea-a8d7-c3b6af271a43'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:31 GMT'
+[2024-10-03T04:35:32.602-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/e98e2a80-ff0e-4fea-a8d7-c3b6af271a43?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '72f6bc52-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:32.633-0400] {_universal.py:549} INFO - Response status: 429
+Response headers:
+    'Content-Length': '285'
+    'Content-Type': 'application/json'
+    'Retry-After': '20'
+    'apim-request-id': '252bdb4b-1e66-452c-b39e-ff18ce63aac4'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:31 GMT'
+[2024-10-03T04:35:52.655-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/e98e2a80-ff0e-4fea-a8d7-c3b6af271a43?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '72f6bc52-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:35:52.840-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '155897'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '34'
+    'apim-request-id': '9cb4c75c-9e2e-44a2-b7c6-9f3c9b8585ac'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:51 GMT'
+[2024-10-03T04:35:52.896-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/b3654e47-4307-442c-a09c-945b33b913c6_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '3724'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '802cb442-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:52.944-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:52 GMT'
+    'ETag': '"0x8DCE386640EC6DC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d894d64-701e-00d5-6d6f-150af7000000'
+    'x-ms-client-request-id': '802cb442-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:51 GMT'
+[2024-10-03T04:35:52.946-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as b3654e47-4307-442c-a09c-945b33b913c6_extracted.txt
+[2024-10-03T04:35:52.948-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/b3654e47-4307-442c-a09c-945b33b913c6.pdf
+[2024-10-03T04:35:53.555-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/be353748-74eb-4904-8f17-f180ce087f1a.pdf to /home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf
+[2024-10-03T04:35:53.560-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/be353748-74eb-4904-8f17-f180ce087f1a.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '8581099'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '802cb443-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:58.386-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:57 GMT'
+    'ETag': '"0x8DCE386674D01E8"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d894ebd-701e-00d5-2a6f-150af7000000'
+    'x-ms-client-request-id': '802cb443-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:57 GMT'
+[2024-10-03T04:35:58.388-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf to Azure Blob Storage Container 1 as be353748-74eb-4904-8f17-f180ce087f1a.pdf
+[2024-10-03T04:35:58.389-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf...
+[2024-10-03T04:35:58.390-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '83730250-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:59.312-0400] {_universal.py:549} INFO - Response status: 400
+Response headers:
+    'Content-Length': '201'
+    'Content-Type': 'application/json; charset=utf-8'
+    'ms-azure-ai-errorcode': 'InvalidRequest'
+    'x-ms-error-code': 'InvalidRequest'
+    'apim-request-id': 'd262b86a-39bf-4c81-bfab-99f75cb66f8f'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:58 GMT'
+[2024-10-03T04:35:59.314-0400] {logging_mixin.py:190} INFO - Error extracting text from /home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf: (InvalidRequest) Invalid request.
+Code: InvalidRequest
+Message: Invalid request.
+Inner error: {
+    "code": "InvalidContentLength",
+    "message": "The input image is too large. Refer to documentation for the maximum file size."
+}
+[2024-10-03T04:35:59.317-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf
+[2024-10-03T04:35:59.613-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf to /home/patrick/Downloads/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf
+[2024-10-03T04:35:59.616-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/assignment2/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '64456'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '83730251-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:35:59.734-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:35:59 GMT'
+    'ETag': '"0x8DCE386681AC010"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d8955f0-701e-00d5-676f-150af7000000'
+    'x-ms-client-request-id': '83730251-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:35:58 GMT'
+[2024-10-03T04:35:59.736-0400] {logging_mixin.py:190} INFO - Uploaded /home/patrick/Downloads/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf to Azure Blob Storage Container 1 as c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf
+[2024-10-03T04:35:59.737-0400] {logging_mixin.py:190} INFO - Extracting text from /home/patrick/Downloads/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf...
+[2024-10-03T04:35:59.739-0400] {_universal.py:510} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read:analyze?stringIndexType=unicodeCodePoint&api-version=2023-07-31'
+Request method: 'POST'
+Request headers:
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '83730252-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:36:00.086-0400] {_universal.py:549} INFO - Response status: 202
+Response headers:
+    'Content-Length': '0'
+    'Operation-Location': 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/fbc8920e-61f5-44b4-8c7c-52a89cd4f8dd?api-version=2023-07-31'
+    'x-envoy-upstream-service-time': '69'
+    'apim-request-id': 'fbc8920e-61f5-44b4-8c7c-52a89cd4f8dd'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:59 GMT'
+[2024-10-03T04:36:00.088-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/fbc8920e-61f5-44b4-8c7c-52a89cd4f8dd?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '83730252-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:36:00.154-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '106'
+    'Content-Type': 'application/json; charset=utf-8'
+    'retry-after': '3'
+    'x-envoy-upstream-service-time': '18'
+    'apim-request-id': 'c89435dc-ba0b-4d8c-a541-d1f191e76f10'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:35:59 GMT'
+[2024-10-03T04:36:03.160-0400] {_universal.py:513} INFO - Request URL: 'https://instance-for-assigment.cognitiveservices.azure.com/formrecognizer/documentModels/prebuilt-read/analyzeResults/fbc8920e-61f5-44b4-8c7c-52a89cd4f8dd?api-version=2023-07-31'
+Request method: 'GET'
+Request headers:
+    'x-ms-client-request-id': '83730252-8162-11ef-8cd7-c120b3b91104'
+    'User-Agent': 'azsdk-python-ai-formrecognizer/3.3.3 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'Ocp-Apim-Subscription-Key': 'REDACTED'
+No body was attached to the request
+[2024-10-03T04:36:03.356-0400] {_universal.py:549} INFO - Response status: 200
+Response headers:
+    'Content-Length': '155896'
+    'Content-Type': 'application/json; charset=utf-8'
+    'x-envoy-upstream-service-time': '32'
+    'apim-request-id': 'd797c619-f29f-4a25-b635-16223bcaeb36'
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+    'x-content-type-options': 'nosniff'
+    'x-ms-region': 'East US'
+    'Date': 'Thu, 03 Oct 2024 08:36:02 GMT'
+[2024-10-03T04:36:03.414-0400] {_universal.py:510} INFO - Request URL: 'https://storageforassignment2.blob.core.windows.net/extracts/c4456885-2f03-436f-8fe9-0b4ca6822cdb_extracted.txt'
+Request method: 'PUT'
+Request headers:
+    'Content-Length': '3725'
+    'x-ms-blob-type': 'REDACTED'
+    'x-ms-version': 'REDACTED'
+    'Content-Type': 'application/octet-stream'
+    'Accept': 'application/xml'
+    'User-Agent': 'azsdk-python-storage-blob/12.23.1 Python/3.10.12 (Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.35)'
+    'x-ms-date': 'REDACTED'
+    'x-ms-client-request-id': '867194d0-8162-11ef-8cd7-c120b3b91104'
+    'Authorization': 'REDACTED'
+A body is sent with the request
+[2024-10-03T04:36:03.465-0400] {_universal.py:549} INFO - Response status: 201
+Response headers:
+    'Content-Length': '0'
+    'Content-MD5': 'REDACTED'
+    'Last-Modified': 'Thu, 03 Oct 2024 08:36:02 GMT'
+    'ETag': '"0x8DCE3866A543CFC"'
+    'Server': 'Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0'
+    'x-ms-request-id': '3d8959b1-701e-00d5-4d6f-150af7000000'
+    'x-ms-client-request-id': '867194d0-8162-11ef-8cd7-c120b3b91104'
+    'x-ms-version': 'REDACTED'
+    'x-ms-content-crc64': 'REDACTED'
+    'x-ms-request-server-encrypted': 'REDACTED'
+    'Date': 'Thu, 03 Oct 2024 08:36:02 GMT'
+[2024-10-03T04:36:03.470-0400] {logging_mixin.py:190} INFO - Uploaded extracted text to Azure Blob Storage Container 2 as c4456885-2f03-436f-8fe9-0b4ca6822cdb_extracted.txt
+[2024-10-03T04:36:03.472-0400] {logging_mixin.py:190} INFO - Deleted local file: /home/patrick/Downloads/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf
+[2024-10-03T04:36:03.473-0400] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-03T04:36:03.976-0400] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T04:36:03.977-0400] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=huggingface_pdf_pipeline, task_id=process_pdfs_task, run_id=manual__2024-10-03T08:31:36.535474+00:00, execution_date=20241003T083136, start_date=20241003T083414, end_date=20241003T083603
+[2024-10-03T04:36:04.133-0400] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-03T04:36:04.135-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-03T04:36:04.135-0400] {logging_mixin.py:190} INFO - Dag name:huggingface_pdf_pipeline queued_at:2024-10-03 08:31:37.284804+00:00
+[2024-10-03T04:36:04.137-0400] {logging_mixin.py:190} INFO - Task hostname:LAPTOP-GD5THE3N. operator:PythonOperator
+[2024-10-03T04:36:04.169-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T04:36:04.539-0400] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-10-03T04:36:04.788-0400] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T04:36:04.845-0400] {local_task_job_runner.py:245} INFO - ::endgroup::
