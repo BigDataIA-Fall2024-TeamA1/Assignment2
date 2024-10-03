@@ -1411,3 +1411,6 @@
 [2024-10-03T04:48:01.359-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py for tasks to queue
 [2024-10-03T04:48:01.360-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:01.360-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py
 [2024-10-03T04:48:01.365-0400] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py
+[2024-10-03T04:48:02.174-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:02.173-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:48:02.217-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:02.217-0400] {dag.py:4180} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2024-10-03T04:48:02.752-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/tutorial_taskflow_api.py took 1.398 seconds

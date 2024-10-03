@@ -980,3 +980,10 @@
 [2024-10-03T04:47:04.732-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:04.732-0400] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-03T04:47:04.779-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:04.779-0400] {dag.py:4180} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
 [2024-10-03T04:47:05.265-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py took 1.297 seconds
+[2024-10-03T04:48:07.264-0400] {processor.py:186} INFO - Started process (PID=102605) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2024-10-03T04:48:07.264-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2024-10-03T04:48:07.266-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:07.265-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2024-10-03T04:48:07.270-0400] {processor.py:925} INFO - DAG(s) 'example_sensor_decorator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2024-10-03T04:48:08.039-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:08.039-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:48:08.088-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:08.088-0400] {dag.py:4180} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2024-10-03T04:48:08.552-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_sensor_decorator.py took 1.292 seconds

@@ -980,3 +980,10 @@
 [2024-10-03T04:47:03.170-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:03.170-0400] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-03T04:47:03.214-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:47:03.214-0400] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
 [2024-10-03T04:47:03.692-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py took 1.424 seconds
+[2024-10-03T04:48:05.629-0400] {processor.py:186} INFO - Started process (PID=102598) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-10-03T04:48:05.630-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2024-10-03T04:48:05.631-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:05.631-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-10-03T04:48:05.638-0400] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2024-10-03T04:48:06.434-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:06.434-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-03T04:48:06.478-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:06.478-0400] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2024-10-03T04:48:06.955-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py took 1.330 seconds

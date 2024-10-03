@@ -1413,3 +1413,4 @@
 [2024-10-03T04:48:00.465-0400] {processor.py:925} INFO - DAG(s) 'example_short_circuit_decorator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py
 [2024-10-03T04:48:01.278-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:01.278-0400] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-03T04:48:01.321-0400] {logging_mixin.py:190} INFO - [2024-10-03T04:48:01.321-0400] {dag.py:4180} INFO - Setting next_dagrun for example_short_circuit_decorator to None, run_after=None
+[2024-10-03T04:48:01.808-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-ZQKp6x3P-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_short_circuit_decorator.py took 1.355 seconds
