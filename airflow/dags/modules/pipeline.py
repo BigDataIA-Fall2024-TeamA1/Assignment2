@@ -4,9 +4,20 @@ from bs4 import BeautifulSoup
 import fitz  # PyMuPDF for PDF extraction
 import json
 import base64
-from azure.storage.blob import BlobServiceClient
+from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPermissions
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
+from azure.search.documents import SearchClient
+from azure.search.documents.indexes import SearchIndexClient, SearchIndexerClient
+from azure.search.documents.indexes.models import (
+    SearchIndex,
+    SearchField,
+    SearchFieldDataType,
+    SimpleField,
+    SearchableField,
+    ComplexField
+)
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -21,7 +32,13 @@ AZURE_CONTAINER_NAME_1 = os.getenv('AZURE_STORAGE_CONTAINER_NAME_1')  # Containe
 AZURE_CONTAINER_NAME_2 = os.getenv('AZURE_STORAGE_CONTAINER_NAME_2')  # Container 2 for extracted text
 AZURE_CONTAINER_NAME_3 = os.getenv('AZURE_STORAGE_CONTAINER_NAME_3')  # Container 3 for extracted content using PyMuPDF
 
-# Azure AI Document Intelligence Configuration
+# Azure Cognitive Search Configuration
+AZURE_SEARCH_SERVICE_NAME = os.getenv('AZURE_SEARCH_SERVICE_NAME')
+AZURE_SEARCH_ADMIN_API_KEY = os.getenv('AZURE_SEARCH_ADMIN_API_KEY')
+AZURE_SEARCH_QUERY_API_KEY = os.getenv('AZURE_SEARCH_QUERY_API_KEY')
+AZURE_SEARCH_INDEX_NAME = os.getenv('AZURE_SEARCH_INDEX_NAME')
+
+# Azure Form Recognizer Configuration
 AZURE_FORM_RECOGNIZER_ENDPOINT = os.getenv('AZURE_FORM_RECOGNIZER_ENDPOINT')
 AZURE_FORM_RECOGNIZER_KEY = os.getenv('AZURE_FORM_RECOGNIZER_KEY')
 
@@ -99,111 +116,110 @@ def upload_to_azure_container_1(file_path, blob_name):
     except Exception as e:
         print(f"Error uploading {file_path} to Azure Blob Storage Container 1: {e}")
 
-# Initialize the DocumentAnalysisClient
-document_analysis_client = DocumentAnalysisClient(
-    endpoint=AZURE_FORM_RECOGNIZER_ENDPOINT,
-    credential=AzureKeyCredential(AZURE_FORM_RECOGNIZER_KEY)
-)
+def generate_blob_sas_url(container_name, blob_name, permission, expiry_hours=1):
+    """Generate a SAS URL for a blob."""
+    sas_token = generate_blob_sas(
+        account_name=blob_service_client.account_name,
+        container_name=container_name,
+        blob_name=blob_name,
+        account_key=blob_service_client.credential.account_key,
+        permission=permission,
+        expiry=datetime.utcnow() + timedelta(hours=expiry_hours)
+    )
+    blob_url = f"https://{blob_service_client.account_name}.blob.core.windows.net/{container_name}/{blob_name}?{sas_token}"
+    return blob_url
 
-def extract_document_content(pdf_path):
-    """Extract content from a PDF using Azure AI Document Intelligence's prebuilt-document model, splitting if >4MB."""
-    file_size = os.path.getsize(pdf_path)
-    
-    if file_size <= 4 * 1024 * 1024:
-        # If file is under 4MB, process directly
-        with open(pdf_path, "rb") as file:
-            return process_with_document_analysis(file)
-    else:
-        # Split into chunks and process each chunk separately
+def create_search_index():
+    search_index_client = SearchIndexClient(
+        endpoint=f"https://{AZURE_SEARCH_SERVICE_NAME}.search.windows.net",
+        credential=AzureKeyCredential(AZURE_SEARCH_ADMIN_API_KEY)
+    )
+
+    # Define the index schema for a generic PDF storage
+    fields = [
+        SimpleField(name="metadata_storage_path", type=SearchFieldDataType.String, key=True),  # Unique identifier for each document
+        SearchableField(name="content", type=SearchFieldDataType.String, analyzer_name="en.lucene"),  # Full-text search of PDF content
+        SimpleField(name="metadata_storage_name", type=SearchFieldDataType.String, filterable=True),  # File name
+        SimpleField(name="metadata_title", type=SearchFieldDataType.String, searchable=True),  # Title of the document
+        SimpleField(name="metadata_author", type=SearchFieldDataType.String, searchable=True),  # Author name
+        ComplexField(name="pages", fields=[
+            SimpleField(name="page_number", type=SearchFieldDataType.Int32, filterable=True),
+            SearchableField(name="text", type=SearchFieldDataType.String),  # Text content of the page
+            ComplexField(name="images", fields=[
+                SimpleField(name="image_index", type=SearchFieldDataType.Int32),
+                SearchableField(name="base64_data", type=SearchFieldDataType.String),  # Base64 encoded image data
+                SimpleField(name="description", type=SearchFieldDataType.String)  # Description of the image
+            ])
+        ]),
+        SimpleField(name="document_type", type=SearchFieldDataType.String, filterable=True),  # Type of document (e.g., invoice, book, etc.)
+        ComplexField(name="tables", fields=[
+            SimpleField(name="table_index", type=SearchFieldDataType.Int32),
+            SearchableField(name="table_content", type=SearchFieldDataType.String)  # Text content of tables
+        ])
+    ]
+    index = SearchIndex(name=AZURE_SEARCH_INDEX_NAME, fields=fields)
+
+    # Create the index if it doesn't exist
+    try:
+        result = search_index_client.get_index(AZURE_SEARCH_INDEX_NAME)
+        print(f"Index '{AZURE_SEARCH_INDEX_NAME}' already exists.")
+    except Exception:
+        print(f"Creating index '{AZURE_SEARCH_INDEX_NAME}'.")
+        search_index_client.create_index(index)
+
+def extract_content_with_azure_ai(pdf_path, blob_name):
+    """Extract content from a PDF using Azure Form Recognizer page-by-page and upload to Azure Blob Storage Container 2."""
+    document_analysis_client = DocumentAnalysisClient(
+        endpoint=AZURE_FORM_RECOGNIZER_ENDPOINT,
+        credential=AzureKeyCredential(AZURE_FORM_RECOGNIZER_KEY)
+    )
+
+    extracted_data = {
+        "document_title": os.path.basename(pdf_path),
+        "pages": []
+    }
+
+    try:
+        # Open the PDF file using PyMuPDF to process it page by page
         doc = fitz.open(pdf_path)
-        extracted_data = {"document_title": os.path.basename(pdf_path), "pages": []}
-
-        # Iterate through pages in 4MB chunks
-        chunk_pages = []
-        chunk_size = 0
-
+        
         for page_num in range(doc.page_count):
-            page = doc[page_num]
-            chunk_pages.append(page)
-            chunk_size += len(page.get_text("text").encode('utf-8'))  # Estimate size of text content
+            # Extract page-by-page to reduce memory overhead and handle large, image-heavy documents
+            page = doc.load_page(page_num)
 
-            if chunk_size >= 4 * 1024 * 1024 or page_num == doc.page_count - 1:
-                # Process the chunk if it reached ~4MB or last page
-                extracted_data.update(process_chunk_pages(chunk_pages))
-                chunk_pages = []
-                chunk_size = 0
+            # Convert the page to bytes
+            page_bytes = page.get_pixmap().tobytes("png")
 
-        doc.close()
-        return extracted_data
+            # Use Azure AI to analyze the document's content
+            poller = document_analysis_client.begin_analyze_document("prebuilt-layout", page_bytes)
+            result = poller.result()
 
-def process_with_document_analysis(file):
-    """Process a file with Azure Document Analysis Client and return extracted data."""
-    try:
-        poller = document_analysis_client.begin_analyze_document("prebuilt-document", document=file)
-        result = poller.result()
-    except Exception as e:
-        print(f"Error with 'prebuilt-document': {e}. Trying 'prebuilt-read' model...")
-        file.seek(0)  # Reset file pointer for retry
-        poller = document_analysis_client.begin_analyze_document("prebuilt-read", document=file)
-        result = poller.result()
+            # Extracting lines from the page
+            page_data = {
+                "page_number": page_num + 1,
+                "lines": []
+            }
 
-    extracted_data = {"pages": []}
-    for page in result.pages:
-        page_data = {
-            "page_number": page.page_number,
-            "lines": [line.content for line in page.lines],
-            "tables": [],
-            "images": []
-        }
-        if hasattr(page, 'tables'):
-            for table in page.tables:
-                table_data = [{"row": cell.row_index, "column": cell.column_index, "content": cell.content}
-                              for cell in table.cells]
-                page_data["tables"].append({"table": table_data})
-        if hasattr(page, 'selection_marks'):
-            for selection_mark in page.selection_marks:
-                if selection_mark.state == "selected":
-                    page_data["images"].append("Selection Mark")
-        extracted_data["pages"].append(page_data)
-    
-    return extracted_data
+            # Loop through the page and add text lines to `page_data`
+            for line in result.pages[0].lines:
+                page_data["lines"].append(line.content)
 
-def process_chunk_pages(pages):
-    """Convert chunk of pages into a single temporary PDF, analyze, and return extracted data."""
-    temp_pdf_path = "temp_chunk.pdf"
-    extracted_data = {"pages": []}
+            extracted_data["pages"].append(page_data)
+            print(f"Processed page {page_num + 1} of {doc.page_count}")
 
-    # Save chunk pages to temp PDF
-    temp_pdf = fitz.open()
-    for page in pages:
-        temp_pdf.insert_pdf(page.parent, from_page=page.number, to_page=page.number)
-    temp_pdf.save(temp_pdf_path)
-    temp_pdf.close()
-
-    # Extract text from temp PDF
-    with open(temp_pdf_path, "rb") as file:
-        chunk_data = process_with_document_analysis(file)
-    os.remove(temp_pdf_path)
-
-    # Append chunk data to extracted_data
-    extracted_data["pages"].extend(chunk_data["pages"])
-    return extracted_data
-
-
-def upload_extracted_content_to_container_2(blob_name, extracted_data):
-    """Upload extracted content as JSON to Azure Blob Storage Container 2."""
-    try:
-        # Convert the extracted data to JSON format
+        # Convert the entire extracted data to JSON format
         json_content = json.dumps(extracted_data, indent=4)
-        json_blob_name = f"{os.path.splitext(blob_name)[0]}_extracted.json"
+        json_blob_name = f"{os.path.splitext(blob_name)[0]}_azure_extracted.json"
 
-        # Upload to Azure Blob Storage Container 2
+        # Upload the JSON file to Azure Blob Storage Container 2
         blob_client = container_client_2.get_blob_client(json_blob_name)
         blob_client.upload_blob(json_content, overwrite=True)
-        print(f"Uploaded extracted content to Azure Blob Storage Container 2 as {json_blob_name}")
+        print(f"Uploaded Azure AI extracted content to Azure Blob Storage Container 2 as {json_blob_name}")
 
     except Exception as e:
-        print(f"Error uploading extracted content to Azure Blob Storage Container 2: {e}")
+        print(f"Error extracting or uploading content from Azure Form Recognizer: {e}")
+    finally:
+        doc.close()
 
 def extract_content_with_pymupdf(pdf_path):
     """Extract text and images from a PDF using PyMuPDF (fitz) and structure them in a single JSON document."""
@@ -253,7 +269,7 @@ def upload_pymupdf_extracted_content(blob_name, extracted_data):
         print(f"Error uploading extracted content to Azure Blob Storage Container 3: {e}")
 
 def process_pdfs_and_upload():
-    """Download PDFs from Hugging Face, upload to Azure Container 1, extract text, and upload to Container 2 and 3."""
+    """Download PDFs from Hugging Face, upload to Azure Container 1, extract with Azure AI Document Intelligence, and upload to Container 2."""
     
     # Iterate over Hugging Face URLs
     for huggingface_url in huggingface_urls:
@@ -272,33 +288,25 @@ def process_pdfs_and_upload():
 
             # Check if file was downloaded
             if os.path.exists(local_path):
-                
-                # Step 2: Check file size and upload if necessary
-                file_size = os.path.getsize(local_path)
-                if file_size > MAX_FILE_SIZE_BYTES:
-                    print(f"File {file_name} is too large ({file_size} bytes). Skipping extraction.")
-                    upload_to_azure_container_1(local_path, file_name)
-                    os.remove(local_path)
-                    continue
-                
-                # Step 3: Upload PDF to Azure Container 1
+
+                # Step 2: Upload PDF to Azure Container 1 (to maintain an original copy)
                 upload_to_azure_container_1(local_path, file_name)
 
-                # Step 4: Extract text using Azure AI Document Intelligence
-                print(f"Extracting text from {local_path} using Azure AI Document Intelligence...")
-                extracted_data_azure = extract_document_content(local_path)
-                upload_extracted_content_to_container_2(file_name, extracted_data_azure)
+                # Step 3: Extract content using Azure AI Document Intelligence and upload to Container 2
+                extract_content_with_azure_ai(local_path, file_name)
 
-                # Step 5: Extract content (text and images) from PDF using PyMuPDF
-                print(f"Extracting content from {local_path} using PyMuPDF...")
+                # Step 4: Extract content using PyMuPDF and upload to Container 3
                 extracted_data_pymupdf = extract_content_with_pymupdf(local_path)
                 upload_pymupdf_extracted_content(file_name, extracted_data_pymupdf)
 
-                # Clean up local file
+                # Step 5: Clean up local file
                 os.remove(local_path)
             else:
                 print(f"File {local_path} does not exist after download. Skipping.")
 
-
 if __name__ == "__main__":
+    # Initialize the search index
+    create_search_index()
+    
+    # Process PDFs and upload them
     process_pdfs_and_upload()
