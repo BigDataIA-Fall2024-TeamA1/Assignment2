@@ -39,6 +39,9 @@ c. Kefan Zhang: 33%
 
 ## Project Structure
 
+## Project Structure
+
+```bash
 │  .dockerignore
 │  .env
 │  .gitignore
@@ -75,6 +78,7 @@ c. Kefan Zhang: 33%
 │
 └─images
         workflow_diagram.jpeg
+
 
 ## Prerequisites
 
