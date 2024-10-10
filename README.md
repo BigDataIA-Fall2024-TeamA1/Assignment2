@@ -1,4 +1,4 @@
-# AI-Driven PDF Pipeline: Automate, Query, and Scale with Airflow and OpenAI
+# AI-Driven PDF Pipeline: End-to-End Automation with Airflow, OpenAI-Powered Insights, Full Stack Integration, and Containerized Deployment
 
 ## Overview
 
