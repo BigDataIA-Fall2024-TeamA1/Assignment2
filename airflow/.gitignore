@@ -1,2 +1,3 @@
 .webserver_config.py
 .logs/
+.env
