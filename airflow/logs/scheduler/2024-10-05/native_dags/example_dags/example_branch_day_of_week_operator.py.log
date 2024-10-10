@@ -1,0 +1,2609 @@
+[2024-10-05T13:31:42.221-0400] {processor.py:186} INFO - Started process (PID=1826) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:31:42.222-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2024-10-05T13:31:42.223-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:31:42.223-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:31:42.231-0400] {processor.py:925} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:31:53.936-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:31:53.936-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-05T13:31:54.471-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:31:54.471-0400] {dag.py:4180} INFO - Setting next_dagrun for example_weekday_branch_operator to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-05T13:31:55.114-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 12.897 seconds
+[2024-10-05T13:35:26.241-0400] {processor.py:186} INFO - Started process (PID=2842) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:35:26.242-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2024-10-05T13:35:26.244-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:35:26.244-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:35:26.250-0400] {processor.py:925} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:35:28.017-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:35:28.017-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-05T13:35:28.216-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:35:28.216-0400] {dag.py:4180} INFO - Setting next_dagrun for example_weekday_branch_operator to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-05T13:35:28.915-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 2.678 seconds
+[2024-10-05T13:40:21.559-0400] {processor.py:186} INFO - Started process (PID=4229) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:40:21.559-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2024-10-05T13:40:21.561-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:40:21.561-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:40:21.567-0400] {processor.py:925} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:40:43.105-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:40:43.104-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-05T13:40:43.668-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:40:43.668-0400] {dag.py:4180} INFO - Setting next_dagrun for example_weekday_branch_operator to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-05T13:40:44.417-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 22.862 seconds
+[2024-10-05T13:45:02.152-0400] {processor.py:186} INFO - Started process (PID=5433) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:45:02.153-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2024-10-05T13:45:02.155-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:45:02.155-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:45:02.162-0400] {processor.py:925} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:45:05.351-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:45:05.351-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-05T13:45:05.890-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:45:05.890-0400] {dag.py:4180} INFO - Setting next_dagrun for example_weekday_branch_operator to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-05T13:45:06.671-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 4.524 seconds
+[2024-10-05T13:48:51.247-0400] {processor.py:186} INFO - Started process (PID=6421) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:48:51.250-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2024-10-05T13:48:51.252-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:48:51.252-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:48:51.257-0400] {processor.py:925} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:48:53.114-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:48:53.113-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-05T13:48:53.251-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:48:53.251-0400] {dag.py:4180} INFO - Setting next_dagrun for example_weekday_branch_operator to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-05T13:48:53.784-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 2.540 seconds
+[2024-10-05T13:52:51.774-0400] {processor.py:186} INFO - Started process (PID=7527) to work on /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:52:51.775-0400] {processor.py:914} INFO - Processing file /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2024-10-05T13:52:51.777-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:52:51.776-0400] {dagbag.py:588} INFO - Filling up the DagBag from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:52:51.782-0400] {processor.py:925} INFO - DAG(s) 'example_weekday_branch_operator' retrieved from /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2024-10-05T13:52:54.340-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:52:54.339-0400] {process_utils.py:266} INFO - Waiting up to 5 seconds for processes to exit...
+[2024-10-05T13:52:54.358-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:52:54.352-0400] {dagbag.py:698} ERROR - Failed to write serialized DAG: /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='/mnt/c/Users/User/Documents/GitHub/DAMG7245/big_data_assignment2/airflow/logs/scheduler/2024-10-05/native_dags/example_dags/example_branch_day_of_week_operator.py.log'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/models/dagbag.py", line 686, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/models/serialized_dag.py", line 160, in write_dag
+    if session.scalar(
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 704, in __connect
+    )._exec_w_sync_on_first_run(self.dbapi_connection, self)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/event/attr.py", line 332, in _exec_w_sync_on_first_run
+    self(*args, **kw)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/event/attr.py", line 346, in __call__
+    fn(*args, **kw)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 1695, in go
+    return once_fn(*arg, **kw)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 678, in first_connect
+    dialect.do_rollback(c.connection)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 683, in do_rollback
+    dbapi_connection.rollback()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/dag_processing/manager.py", line 468, in _exit_gracefully
+    self.end()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/dag_processing/manager.py", line 1435, in end
+    kill_child_processes_by_pids(pids_to_kill)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/process_utils.py", line 266, in kill_child_processes_by_pids
+    log.info("Waiting up to %s seconds for processes to exit...", timeout)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1104, in emit
+    self.flush()
+  File "/usr/lib/python3.10/logging/__init__.py", line 1084, in flush
+    self.stream.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/dag_processing/manager.py", line 468, in _exit_gracefully
+    self.end()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/dag_processing/manager.py", line 1435, in end
+    kill_child_processes_by_pids(pids_to_kill)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/process_utils.py", line 266, in kill_child_processes_by_pids
+    log.info("Waiting up to %s seconds for processes to exit...", timeout)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1477, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1103, in emit
+    stream.write(msg + self.terminator)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1108, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1021, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 202, in write
+    self.flush()
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 209, in flush
+    self._propagate_log(buf)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/logging_mixin.py", line 190, in _propagate_log
+    self.logger.log(self.level, remove_escape_codes(message))
+  File "/usr/lib/python3.10/logging/__init__.py", line 1547, in log
+    self._log(level, msg, args, **kwargs)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1624, in _log
+    self.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1634, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1696, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 968, in handle
+    self.emit(record)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/file_processor_handler.py", line 76, in emit
+    self.handler.emit(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1218, in emit
+    StreamHandler.emit(self, record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 1100, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 943, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.10/logging/__init__.py", line 680, in format
+    record.asctime = self.formatTime(record, self.datefmt)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/log/timezone_aware.py", line 44, in formatTime
+    dt = timezone.from_timestamp(record.created, tz="local")
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/utils/timezone.py", line 320, in from_timestamp
+    result = result.in_timezone(tz)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/pendulum/datetime.py", line 357, in in_timezone
+    return tz.convert(dt)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/pendulum/tz/timezone.py", line 136, in convert
+    return cast(_DT, dt.astimezone(self))
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/pendulum/datetime.py", line 1278, in astimezone
+    dt = super().astimezone(tz)
+  File "/home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/pendulum/datetime.py", line 1243, in __add__
+    caller = traceback.extract_stack(limit=2)[0].name
+  File "/usr/lib/python3.10/traceback.py", line 226, in extract_stack
+    f = sys._getframe().f_back
+RecursionError: maximum recursion depth exceeded while calling a Python object
+[2024-10-05T13:52:54.366-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:52:54.366-0400] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-05T13:52:55.451-0400] {logging_mixin.py:190} INFO - [2024-10-05T13:52:55.450-0400] {dag.py:4180} INFO - Setting next_dagrun for example_weekday_branch_operator to 2024-10-04 00:00:00+00:00, run_after=2024-10-05 00:00:00+00:00
+[2024-10-05T13:52:56.000-0400] {processor.py:208} INFO - Processing /home/patrick/.cache/pypoetry/virtualenvs/airflow-wPbgcfzP-py3.10/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 4.229 seconds

@@ -1,28 +1,27 @@
-project_name/
+├─.env
+├─ poetry.lock
+├─ project_tree_structure
+├─ pyproject.toml
+│  
+├─ airflow
+│   │  .gitattributes
+│   │  .gitignore
+│   │  
+│   │  
+│   │
+│   └─dags
+│      ├─ huggingface_pdf_airflow_dag.py
+│      │
+│      └─ modules
+│        │ pipeline.py
+│        │ view.py
+│        └─__init__.py
+├─backend
+│  │  fastapi_code.py
+│  └─ openai_client.py
 │
-├── airflow/                   
-│   ├── dags/
-│   ├── Dockerfile
-│   ├── pyproject.toml
-│   └── poetry.lock
-│ 
-├── backend/                       
-│   ├── main.py                
-│   ├── requirements.txt       
-│   ├── Dockerfile
-│   ├── .env                   
-│   └── pyproject.toml         
+├─frontend
+│ └─streamlit_test.py
 │
-├── frontend/             
-│   ├── streamlit_app.py                 
-│   ├── modules/               # Directory for reusable modules
-│   │   ├── openai_module.py   # OpenAI interaction module
-│   │   ├── sql_module.py      # SQL interaction module
-│   │   └── s3_module.py       # S3 interaction module
-│   ├── requirements.txt       
-│   ├── Dockerfile
-│   ├── .env                   
-│   └── pyproject.toml         
-│
-├── docker-compose.yml
-└── .env                       
+└─images
+  └─workflow.jpeg

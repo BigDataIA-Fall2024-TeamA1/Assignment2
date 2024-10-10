@@ -1,0 +1,55 @@
+[2024-10-03T22:26:19.165-0400] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-03T22:26:32.839-0400] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: huggingface_pdf_pipeline.download_pdfs_task manual__2024-10-04T02:24:10.297091+00:00 [queued]>
+[2024-10-03T22:26:33.599-0400] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: huggingface_pdf_pipeline.download_pdfs_task manual__2024-10-04T02:24:10.297091+00:00 [queued]>
+[2024-10-03T22:26:33.600-0400] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-03T22:26:33.841-0400] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): download_pdfs_task> on 2024-10-04 02:24:10.297091+00:00
+[2024-10-03T22:26:33.845-0400] {standard_task_runner.py:72} INFO - Started process 27959 to run task
+[2024-10-03T22:26:33.847-0400] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'huggingface_pdf_pipeline', 'download_pdfs_task', 'manual__2024-10-04T02:24:10.297091+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/huggingface_pdf_airflow_dag.py', '--cfg-path', '/tmp/tmpzxbxnlsp']
+[2024-10-03T22:26:33.848-0400] {standard_task_runner.py:105} INFO - Job 32: Subtask download_pdfs_task
+[2024-10-03T22:26:46.693-0400] {job.py:229} INFO - Heartbeat recovered after 52.75 seconds
+[2024-10-03T22:26:49.440-0400] {task_command.py:467} INFO - Running <TaskInstance: huggingface_pdf_pipeline.download_pdfs_task manual__2024-10-04T02:24:10.297091+00:00 [running]> on host LAPTOP-GD5THE3N.
+[2024-10-03T22:26:57.638-0400] {job.py:229} INFO - Heartbeat recovered after 11.03 seconds
+[2024-10-03T22:27:01.064-0400] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='huggingface_pdf_pipeline' AIRFLOW_CTX_TASK_ID='download_pdfs_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-04T02:24:10.297091+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-04T02:24:10.297091+00:00'
+[2024-10-03T22:27:01.067-0400] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-03T22:27:01.069-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-03T22:27:01.070-0400] {logging_mixin.py:190} INFO - Current task name:download_pdfs_task state:running start_date:2024-10-04 02:26:32.841110+00:00
+[2024-10-03T22:27:01.071-0400] {logging_mixin.py:190} INFO - Dag name:huggingface_pdf_pipeline and current dag run status:running
+[2024-10-03T22:27:01.072-0400] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-03T22:27:01.334-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf
+[2024-10-03T22:27:01.336-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf
+[2024-10-03T22:27:01.337-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf
+[2024-10-03T22:27:01.736-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf
+[2024-10-03T22:27:01.739-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/32f386b9-73ee-4455-b412-ddad508aa979.pdf
+[2024-10-03T22:27:01.740-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf
+[2024-10-03T22:27:01.741-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf
+[2024-10-03T22:27:01.742-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf
+[2024-10-03T22:27:01.743-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf
+[2024-10-03T22:27:01.744-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/8f697523-6988-4c4f-8d72-760a45681f68.pdf
+[2024-10-03T22:27:01.744-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/b3654e47-4307-442c-a09c-945b33b913c6.pdf
+[2024-10-03T22:27:01.745-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/be353748-74eb-4904-8f17-f180ce087f1a.pdf
+[2024-10-03T22:27:01.745-0400] {logging_mixin.py:190} INFO - Found PDF URL: https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf
+[2024-10-03T22:27:02.053-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf to /home/patrick/Downloads/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf
+[2024-10-03T22:27:02.380-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf to /home/patrick/Downloads/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf
+[2024-10-03T22:27:03.074-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/validation/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf to /home/patrick/Downloads/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf
+[2024-10-03T22:27:03.405-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf to /home/patrick/Downloads/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf
+[2024-10-03T22:27:03.759-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/32f386b9-73ee-4455-b412-ddad508aa979.pdf to /home/patrick/Downloads/32f386b9-73ee-4455-b412-ddad508aa979.pdf
+[2024-10-03T22:27:04.082-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf to /home/patrick/Downloads/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf
+[2024-10-03T22:27:04.468-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf to /home/patrick/Downloads/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf
+[2024-10-03T22:27:04.815-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf to /home/patrick/Downloads/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf
+[2024-10-03T22:27:05.147-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf to /home/patrick/Downloads/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf
+[2024-10-03T22:27:05.508-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/8f697523-6988-4c4f-8d72-760a45681f68.pdf to /home/patrick/Downloads/8f697523-6988-4c4f-8d72-760a45681f68.pdf
+[2024-10-03T22:27:05.839-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/b3654e47-4307-442c-a09c-945b33b913c6.pdf to /home/patrick/Downloads/b3654e47-4307-442c-a09c-945b33b913c6.pdf
+[2024-10-03T22:27:06.382-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/be353748-74eb-4904-8f17-f180ce087f1a.pdf to /home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf
+[2024-10-03T22:27:06.702-0400] {logging_mixin.py:190} INFO - Downloaded https://huggingface.co/datasets/gaia-benchmark/GAIA/resolve/main/2023/test/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf to /home/patrick/Downloads/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf
+[2024-10-03T22:27:06.704-0400] {python.py:240} INFO - Done. Returned value was: ['/home/patrick/Downloads/366e2f2b-8632-4ef2-81eb-bc3877489217.pdf', '/home/patrick/Downloads/67e8878b-5cef-4375-804e-e6291fdbe78a.pdf', '/home/patrick/Downloads/e9a2c537-8232-4c3f-85b0-b52de6bcba99.pdf', '/home/patrick/Downloads/021a5339-744f-42b7-bd9b-9368b3efda7a.pdf', '/home/patrick/Downloads/32f386b9-73ee-4455-b412-ddad508aa979.pdf', '/home/patrick/Downloads/4044eab7-1282-42bd-a559-3bf3a4d5858e.pdf', '/home/patrick/Downloads/634fca59-03b2-4cdf-9ce4-0205df22f256.pdf', '/home/patrick/Downloads/680d7d77-c0c7-49c8-88fd-f8ec623645e9.pdf', '/home/patrick/Downloads/7c215d46-91c7-424e-9f22-37d43ab73ea6.pdf', '/home/patrick/Downloads/8f697523-6988-4c4f-8d72-760a45681f68.pdf', '/home/patrick/Downloads/b3654e47-4307-442c-a09c-945b33b913c6.pdf', '/home/patrick/Downloads/be353748-74eb-4904-8f17-f180ce087f1a.pdf', '/home/patrick/Downloads/c4456885-2f03-436f-8fe9-0b4ca6822cdb.pdf']
+[2024-10-03T22:27:12.861-0400] {job.py:229} INFO - Heartbeat recovered after 15.32 seconds
+[2024-10-03T22:27:19.161-0400] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-03T22:27:19.163-0400] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=huggingface_pdf_pipeline, task_id=download_pdfs_task, run_id=manual__2024-10-04T02:24:10.297091+00:00, execution_date=20241004T022410, start_date=20241004T022632, end_date=20241004T022719
+[2024-10-03T22:27:19.658-0400] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-03T22:27:19.661-0400] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-03T22:27:19.663-0400] {logging_mixin.py:190} INFO - Dag name:huggingface_pdf_pipeline queued_at:2024-10-04 02:24:11.104549+00:00
+[2024-10-03T22:27:19.665-0400] {logging_mixin.py:190} INFO - Task hostname:LAPTOP-GD5THE3N. operator:PythonOperator
+[2024-10-03T22:27:20.845-0400] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-03T22:27:23.904-0400] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-10-03T22:27:26.968-0400] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-03T22:27:27.173-0400] {local_task_job_runner.py:245} INFO - ::endgroup::

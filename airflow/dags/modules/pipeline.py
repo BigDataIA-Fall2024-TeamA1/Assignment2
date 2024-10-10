@@ -162,6 +162,51 @@ def process_pdfs_and_upload():
             else:
                 print(f"File {local_path} does not exist after download. Skipping.")
 
+def download_pdfs(huggingface_urls, download_dir):
+    pdf_urls = []
+    for huggingface_url in huggingface_urls:
+        urls = get_pdf_urls_from_huggingface(huggingface_url)
+        pdf_urls.extend(urls)
+    
+    downloaded_files = []
+    for pdf_url in pdf_urls:
+        file_name = pdf_url.split('/')[-1]
+        local_path = os.path.join(download_dir, file_name)
+        download_file(pdf_url, local_path)
+        downloaded_files.append(local_path)
+    
+    return downloaded_files
+
+# Step 2: Upload PDF to Azure Container 1
+def upload_pdfs_to_azure(downloaded_files):
+    for file_path in downloaded_files:
+        file_name = os.path.basename(file_path)
+        upload_to_azure_container_1(file_path, file_name)
+
+# Step 3: Extract text from PDF
+def extract_texts_from_pdfs(downloaded_files, max_file_size_mb=10):
+    extracted_texts = []
+    for pdf_path in downloaded_files:
+        # 檢查檔案大小
+        file_size_mb = os.path.getsize(pdf_path) / (1024 * 1024)
+        if file_size_mb > max_file_size_mb:
+            print(f"Skipping {pdf_path} because its size is {file_size_mb:.2f} MB, which exceeds the limit of {max_file_size_mb} MB.")
+            continue
+
+        # 提取文本
+        try:
+            extracted_text = extract_text_from_pdf(pdf_path)
+            if extracted_text:
+                extracted_texts.append((pdf_path, extracted_text))
+        except Exception as e:
+            print(f"Error extracting text from {pdf_path}: {e}")
+    
+    return extracted_texts
+
+# Step 4: Upload extracted text to Azure Container 2
+def upload_extracted_texts_to_azure(extracted_texts):
+    for pdf_path, extracted_text in extracted_texts:
+        file_name = os.path.basename(pdf_path)
+        upload_extracted_text_to_container_2(file_name, extracted_text)
+
 # Execute the process
-if __name__ == "__main__":
-    process_pdfs_and_upload()

@@ -3,10 +3,35 @@ name = "backend"
 version = "0.1.0"
 description = ""
 authors = ["Patrick <chiu.men@northeastern.edu>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.10,<3.13"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.12.3"
+azure-ai-formrecognizer = "^3.3.3"
+azure-storage-blob = "^12.23.1"
+boto3 = "^1.35.29"
+python-dotenv = "^1.0.1"
+docutils = "0.20"
+apache-airflow-providers-microsoft-mssql = "^3.9.1"
+apache-airflow-providers-http = "^4.13.1"
+pyodbc = "^5.1.0"
+apache-airflow-providers-postgres = "^5.13.0"
+psycopg2-binary = "^2.9.9"
+apache-airflow = "^2.10.2"
+numpy = "^2.1.1"
+pandas = "^2.2.3"
+pypdf2 = "^3.0.1"
+uvicorn = "^0.31.1"
+fastapi = "^0.115.0"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+openai = "^1.51.2"
+python-multipart = "^0.0.12"
+streamlit = "^1.39.0"
+sqlalchemy = "<2.0"
+bcrypt = "^4.2.0"
+
 
 
 [build-system]
