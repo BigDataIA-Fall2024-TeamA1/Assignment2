@@ -1,7 +1,21 @@
-# **AI-Driven PDF Pipeline: Automate, Query, and Scale with Airflow and OpenAI**
+# AI-Driven PDF Pipeline: Automate, Query, and Scale with Airflow and OpenAI
 
 ## Overview
+
 AI-Driven PDF Pipeline is a comprehensive system designed to automate the process of managing PDF files from Hugging Face and uploading them to Azure Blob Storage, while providing users with an intuitive interface for querying OpenAI about PDF content. The solution integrates an automated pipeline built with Airflow for handling PDF uploads, a Streamlit-based frontend for user registration and interaction, and a FastAPI backend for API responses. The entire project is containerized using Docker Compose, ensuring easy deployment and scalability. With secure user authentication and AI-powered Q&A functionality, AI-Driven PDF Pipeline simplifies document management and enhances content exploration with AI insights.
+
+## Attestation and Contribution Declaration:
+
+WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR
+ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK
+Contribution:
+a. Chiu Meng Che: 33%
+b. Shraddha Bhandarkar: 33%
+c. Kefan Zhang: 33%
+
+## WorkFlow Diagrams
+
+![workflow](workflow_diagram.jpeg)
 
 ## Key Features
 
@@ -61,3 +75,37 @@ AI-Driven PDF Pipeline is a comprehensive system designed to automate the proces
 │
 └─images
         workflow_diagram.jpeg
+
+## Prerequisites
+
+**Docker**: Required to containerize and run the application services.
+- [Download and Install Docker](https://www.docker.com/get-started)
+   
+**Docker Compose**: For orchestrating the multi-container setup (usually bundled with Docker).
+- Verify installation: 
+  ```bash
+  docker-compose --version
+  ```
+
+**Poetry**: A dependency manager for Python to handle virtual environments and package management.
+- Install Poetry by following the instructions here: [Poetry Installation Guide](https://python-poetry.org/docs/#installation)
+- Verify installation: 
+  ```bash
+  poetry --version
+   ```
+
+**Python 3.10+**: The project uses Python 3.10, ensure it is installed on your machine.
+- Verify installation: 
+  ```bash
+  python3 --version
+  ```
+
+Make sure all prerequisites are installed and functioning properly before proceeding with the setup.
+
+## Contributions and Time
+
+Chiu Meng Che:
+
+Shraddha Bhandarkar:
+
+Kefan Zhang:
