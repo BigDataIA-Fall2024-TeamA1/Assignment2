@@ -21,6 +21,10 @@ c. Kefan Zhang: 33%
 
 [Click it to view it](https://codelabs-preview.appspot.com/?file_id=1gBQts95I9VOnikyCroLEi9CNN_CU3dvoj7Q-2rhd6xU#5) 
 
+## PDF Extraction API Evaluation Table
+
+[Click it to view it](https://codelabs-preview.appspot.com/?file_id=1rhBdfWuzv9WtfpV9HKljc-b5BSrTVMmi4zRqXQnnMq8#0)
+
 ## Video 
 
 [Click it to watch it](https://youtu.be/wjVGeD8FlPI)
