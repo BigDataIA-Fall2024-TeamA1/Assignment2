@@ -27,6 +27,7 @@ services:
     volumes:
       - ./frontend:/app/frontend  # 將本地 frontend 目錄掛載到容器內
       - ./backend:/app/backend    # 將本地 backend 目錄掛載到容器內，使 frontend 能夠訪問 backend 模塊
+      - ./templates:/app/frontend/templates  # Mounts templates directory
     env_file: 
       - .env
     environment:
