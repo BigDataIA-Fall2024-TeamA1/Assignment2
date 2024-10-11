@@ -25,9 +25,9 @@ c. Kefan Zhang: 33%
 
 [Click it to watch it](https://youtu.be/wjVGeD8FlPI)
 
-## Link to streamlit public cloud
+## Link to Docker Hub
 
-[Click it to access streamlit public cloud](https://apptestpy-epkxt8shywfvpwpe4hum3f.streamlit.app/) 
+[Click it to access Docker Hub](https://hub.docker.com/repository/docker/mengche881007/docker-labs/general) 
 
 ## Key Features
 
