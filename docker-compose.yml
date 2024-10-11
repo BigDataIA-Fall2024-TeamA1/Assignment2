@@ -1,0 +1,61 @@
+services:
+  airflow:
+    build:
+      context: .
+      dockerfile: airflow/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow:/app/airflow  # 將本地 airflow 目錄掛載到容器內
+      - airflow_logs:/app/airflow/logs  # 使用命名卷來存儲 Airflow 日志
+    env_file: 
+      - .env
+    environment:
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://bdsa_user:Mengche1007@bdsa-server.postgres.database.azure.com:5432/assignment2-airflow?sslmode=require
+      - AIRFLOW__CORE__DAGS_FOLDER=/app/airflow/dags  # 使用命名卷來存儲 Airflow 日志
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app/frontend  # 將本地 frontend 目錄掛載到容器內
+      - ./backend:/app/backend    # 將本地 backend 目錄掛載到容器內，使 frontend 能夠訪問 backend 模塊
+      - ./templates:/app/frontend/templates  # Mounts templates directory
+    env_file: 
+      - .env
+    environment:
+      - PYTHONPATH=/app  # 設置 PYTHONPATH 以包含 /app
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend  # 將本地 backend 目錄掛載到容器內
+    env_file: 
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    networks:
+      - app-network
+
+volumes:
+  airflow_logs:
+
+networks:
+  app-network:
+    driver: bridge
+

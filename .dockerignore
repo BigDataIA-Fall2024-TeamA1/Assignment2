@@ -1,0 +1,6 @@
+airflow/logs/
+airflow/airflow.cfg
+airflow/webserver_config.py
+backend/__pycache__/
+project_tree_structure
+images/

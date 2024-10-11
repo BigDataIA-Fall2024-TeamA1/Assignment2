@@ -1,0 +1,36 @@
+│  .dockerignore
+│  .env
+│  .gitignore
+│  docker-compose.yml
+│  project_tree_structure
+│  README
+│  
+├─airflow
+│  │  .gitattributes
+│  │  airflow.cfg
+│  │  Dockerfile
+│  │  poetry.lock
+│  │  pyproject.toml
+│  │  
+│  ├─dags
+│  │  │  huggingface_pdf_airflow_dag.py
+│  │  │  
+│  │  └─modules
+│  │     │  pipeline.py
+│  │     └─ __init__.py
+├─backend
+│  │  Dockerfile
+│  │  fastapi_code.py
+│  │  openai_client.py
+│  │  poetry.lock
+│  │  pyproject.toml
+│  └─ __init__.py
+│
+├─frontend
+│      Dockerfile
+│      poetry.lock
+│      pyproject.toml
+│      streamlit_test.py
+│
+└─images
+        workflow_diagram.jpeg
