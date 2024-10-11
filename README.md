@@ -17,6 +17,14 @@ c. Kefan Zhang: 33%
 
 ![workflow](images/workflow_diagram.jpeg)
 
+## Codelabs
+
+[Click it to view it](https://codelabs-preview.appspot.com/?file_id=1gBQts95I9VOnikyCroLEi9CNN_CU3dvoj7Q-2rhd6xU#5) 
+
+## Video 
+
+[Click it to watch it](https://youtu.be/pWp70t16a5o)
+
 ## Link to streamlit public cloud
 
 [Click it to access streamlit public cloud](https://apptestpy-epkxt8shywfvpwpe4hum3f.streamlit.app/) 
