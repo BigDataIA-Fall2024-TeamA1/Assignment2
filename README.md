@@ -119,12 +119,19 @@ Make sure all prerequisites are installed and functioning properly before procee
 ## Contributions and Time
 
 Chiu Meng Che:
-1. Create a workflow graph to clarify the relationships between Airflow, FastAPI, Streamlit, Azure Blob Storage, Azure SQL Server, and OpenAI.
-2. Use Airflow to build an automated pipeline that downloads PDF files from Hugging Face, extracts their content, and stores the results in Azure Blob Storage.
-3. Create Dockerfiles for the Airflow container, frontend container, and backend container, and then use docker-compose to run these services simultaneously, setting up a network to ensure  they function properly.
-4. Understand the principles of FastAPI and add Azure SQL Server to store credentials.
-5. Create a README file.
+1. Create a workflow graph to clarify the relationships between Airflow, FastAPI, Streamlit, Azure Blob Storage, Azure SQL Server, and OpenAI.(2 hours)
+2. Use Airflow to build an automated pipeline that downloads PDF files from Hugging Face, extracts their content, and stores the results in Azure Blob Storage.(1 day)
+3. Create Dockerfiles for the Airflow container, frontend container, and backend container, and then use docker-compose to run these services simultaneously, setting up a network to ensure  they function properly.(2 day)
+4. Understand the principles of FastAPI and add Azure SQL Server to store credentials.(2 hours)
+5. Create a README file.(2 hours)
+6. Deploy docker on GCP(2 hours)
 
 Shraddha Bhandarkar:
+1. PDF Extraction using Azure AI Document Intelligence: Implemented PDF text extraction using Azure AI Document Intelligence to efficiently process and extract content from complex PDF files (3 days).
+2. PDF Extraction using PyMuPDF: Added support for extracting text from PDFs using PyMuPDF, enabling handling of documents locally and without relying on cloud services (12 hours).
+3. Streamlit Enhancement: Enhanced the Streamlit web application by optimizing the user interface and improving data display features for a better user experience (8 hours).
 
 Kefan Zhang:
+1.	Complete the FastAPI code, designing the logic for FastAPI to interact with three Azure blobs, as well as with Streamlit and OpenAI (92 hours).
+2.	Use Ubuntu to run Docker and deploy the entire project (4 hours).
+3.	Complete the code for Streamlit to interact with FastAPI and OpenAI (17 hours).
