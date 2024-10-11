@@ -111,6 +111,11 @@ Make sure all prerequisites are installed and functioning properly before procee
 ## Contributions and Time
 
 Chiu Meng Che:
+1. Create a workflow graph to clarify the relationships between Airflow, FastAPI, Streamlit, Azure Blob Storage, Azure SQL Server, and OpenAI.
+2. Use Airflow to build an automated pipeline that downloads PDF files from Hugging Face, extracts their content, and stores the results in Azure Blob Storage.
+3. Create Dockerfiles for the Airflow container, frontend container, and backend container, and then use docker-compose to run these services simultaneously, setting up a network to ensure  they function properly.
+4. Understand the principles of FastAPI and add Azure SQL Server to store credentials.
+5. Create a README file.
 
 Shraddha Bhandarkar:
 
