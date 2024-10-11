@@ -17,6 +17,10 @@ c. Kefan Zhang: 33%
 
 ![workflow](images/workflow_diagram.jpeg)
 
+## Link to streamlit public cloud
+
+[Click it to access streamlit public cloud](https://apptestpy-epkxt8shywfvpwpe4hum3f.streamlit.app/) 
+
 ## Key Features
 
 - **Automated Hugging Face PDF Uploads**:
