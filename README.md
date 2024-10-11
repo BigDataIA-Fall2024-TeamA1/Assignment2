@@ -23,7 +23,7 @@ c. Kefan Zhang: 33%
 
 ## Video 
 
-[Click it to watch it](https://youtu.be/pWp70t16a5o)
+[Click it to watch it](https://youtu.be/wjVGeD8FlPI)
 
 ## Link to streamlit public cloud
 
